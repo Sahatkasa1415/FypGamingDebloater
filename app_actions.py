@@ -270,7 +270,7 @@ def remove_selected_apps(app_list):
     
     for app in app_list:
         if remove_app(app):
-            successful_removals += 1
+            successful_removals += 1+1
         else:
             failed_removals += 1
     

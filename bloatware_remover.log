@@ -780,3 +780,429 @@ At line:1 char:62
 2025-03-06 11:49:00,375 - INFO - Restoration complete. Successfully restored 29 apps.
 2025-03-06 11:49:36,852 - INFO - Restore defaults cancelled by user
 2025-03-06 11:49:40,123 - INFO - User selected to remove specific apps
+2025-03-06 12:02:42,673 - INFO - Application started
+2025-03-06 12:02:42,677 - INFO - Creating system restore point
+2025-03-06 12:02:43,233 - INFO - Successfully ran command: Get-ComputerRestorePoint
+2025-03-06 12:02:43,591 - INFO - Successfully ran command: Checkpoint-Computer -Description "Gaming Bloatware Remover - 2025-03-06_12-02-42" -RestorePointType "APPLICATION_UNINSTALL"
+2025-03-06 12:02:43,622 - INFO - System restore point created successfully
+2025-03-06 12:02:47,964 - INFO - User selected to remove specific apps
+2025-03-06 12:03:26,612 - INFO - User confirmed removal of selected apps: Microsoft.SkypeApp
+2025-03-06 12:03:26,632 - INFO - Starting removal of selected apps: Microsoft.SkypeApp
+2025-03-06 12:03:26,632 - INFO - Attempting to remove Microsoft.SkypeApp
+2025-03-06 12:03:28,516 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.SkypeApp* | Remove-AppxPackage
+2025-03-06 12:03:28,516 - INFO - Successfully removed app Microsoft.SkypeApp
+2025-03-06 12:03:28,853 - INFO - Successfully ran command: if (Test-Path 'HKCR:\Extensions\ContractId\Windows.Launch\PackageId\Microsoft.SkypeApp') { Remove-Item -Path 'HKCR:\Extensions\ContractId\Windows.Launch\PackageId\Microsoft.SkypeApp' -Recurse -Force }
+2025-03-06 12:03:29,175 - INFO - Successfully ran command: if (Test-Path 'HKCR:\Extensions\ContractId\Windows.Protocol\PackageId\Microsoft.SkypeApp') { Remove-Item -Path 'HKCR:\Extensions\ContractId\Windows.Protocol\PackageId\Microsoft.SkypeApp' -Recurse -Force }
+2025-03-06 12:03:29,176 - INFO - Successfully removed all registry keys for Microsoft.SkypeApp
+2025-03-06 12:03:29,223 - INFO - Removal complete. Successfully removed 1 apps.
+2025-03-06 12:03:51,050 - INFO - User selected to restore defaults
+2025-03-06 12:03:51,064 - INFO - Starting system defaults restoration
+2025-03-06 12:05:11,086 - INFO - Successfully ran command: Get-AppxPackage -AllUsers | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml" -ErrorAction SilentlyContinue}
+2025-03-06 12:05:11,838 - ERROR - Error running command: Get-AppxPackage -AllUsers -Name *Microsoft.XboxApp* | Reset-AppxPackage -ErrorAction SilentlyContinue
+2025-03-06 12:05:11,838 - ERROR - Error details: Reset-AppxPackage : The term 'Reset-AppxPackage' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try 
+again.
+At line:1 char:55
++ ... ckage -AllUsers -Name *Microsoft.XboxApp* | Reset-AppxPackage -ErrorA ...
++                                                 ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Reset-AppxPackage:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+2025-03-06 12:05:12,758 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.XboxApp*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-06 12:05:13,195 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.XboxApp -ErrorAction SilentlyContinue
+2025-03-06 12:05:13,195 - ERROR - Error details: 
+2025-03-06 12:05:13,814 - ERROR - Error running command: Get-AppxPackage -AllUsers -Name *Microsoft.Xbox.TCUI* | Reset-AppxPackage -ErrorAction SilentlyContinue
+2025-03-06 12:05:13,814 - ERROR - Error details: Reset-AppxPackage : The term 'Reset-AppxPackage' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try 
+again.
+At line:1 char:57
++ ... age -AllUsers -Name *Microsoft.Xbox.TCUI* | Reset-AppxPackage -ErrorA ...
++                                                 ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Reset-AppxPackage:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+2025-03-06 12:05:14,668 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.Xbox.TCUI*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-06 12:05:15,123 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.Xbox.TCUI -ErrorAction SilentlyContinue
+2025-03-06 12:05:15,123 - ERROR - Error details: 
+2025-03-06 12:05:15,814 - ERROR - Error running command: Get-AppxPackage -AllUsers -Name *Microsoft.XboxGameOverlay* | Reset-AppxPackage -ErrorAction SilentlyContinue
+2025-03-06 12:05:15,814 - ERROR - Error details: Reset-AppxPackage : The term 'Reset-AppxPackage' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try 
+again.
+At line:1 char:63
++ ... llUsers -Name *Microsoft.XboxGameOverlay* | Reset-AppxPackage -ErrorA ...
++                                                 ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Reset-AppxPackage:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+2025-03-06 12:05:16,662 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.XboxGameOverlay*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-06 12:05:17,110 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.XboxGameOverlay -ErrorAction SilentlyContinue
+2025-03-06 12:05:17,110 - ERROR - Error details: 
+2025-03-06 12:05:17,752 - ERROR - Error running command: Get-AppxPackage -AllUsers -Name *Microsoft.XboxGamingOverlay* | Reset-AppxPackage -ErrorAction SilentlyContinue
+2025-03-06 12:05:17,752 - ERROR - Error details: Reset-AppxPackage : The term 'Reset-AppxPackage' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try 
+again.
+At line:1 char:65
++ ... Users -Name *Microsoft.XboxGamingOverlay* | Reset-AppxPackage -ErrorA ...
++                                                 ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Reset-AppxPackage:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+2025-03-06 12:05:18,550 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.XboxGamingOverlay*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-06 12:05:18,967 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.XboxGamingOverlay -ErrorAction SilentlyContinue
+2025-03-06 12:05:18,967 - ERROR - Error details: 
+2025-03-06 12:05:19,574 - ERROR - Error running command: Get-AppxPackage -AllUsers -Name *Microsoft.XboxIdentityProvider* | Reset-AppxPackage -ErrorAction SilentlyContinue
+2025-03-06 12:05:19,574 - ERROR - Error details: Reset-AppxPackage : The term 'Reset-AppxPackage' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try 
+again.
+At line:1 char:68
++ ... rs -Name *Microsoft.XboxIdentityProvider* | Reset-AppxPackage -ErrorA ...
++                                                 ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Reset-AppxPackage:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+2025-03-06 12:05:20,379 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.XboxIdentityProvider*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-06 12:05:20,812 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.XboxIdentityProvider -ErrorAction SilentlyContinue
+2025-03-06 12:05:20,812 - ERROR - Error details: 
+2025-03-06 12:05:21,423 - ERROR - Error running command: Get-AppxPackage -AllUsers -Name *Microsoft.XboxSpeechToTextOverlay* | Reset-AppxPackage -ErrorAction SilentlyContinue
+2025-03-06 12:05:21,423 - ERROR - Error details: Reset-AppxPackage : The term 'Reset-AppxPackage' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try 
+again.
+At line:1 char:71
++ ... -Name *Microsoft.XboxSpeechToTextOverlay* | Reset-AppxPackage -ErrorA ...
++                                                 ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Reset-AppxPackage:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+2025-03-06 12:05:22,193 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.XboxSpeechToTextOverlay*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-06 12:05:22,602 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.XboxSpeechToTextOverlay -ErrorAction SilentlyContinue
+2025-03-06 12:05:22,603 - ERROR - Error details: 
+2025-03-06 12:05:23,205 - ERROR - Error running command: Get-AppxPackage -AllUsers -Name *Microsoft.MicrosoftSolitaireCollection* | Reset-AppxPackage -ErrorAction SilentlyContinue
+2025-03-06 12:05:23,206 - ERROR - Error details: Reset-AppxPackage : The term 'Reset-AppxPackage' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try 
+again.
+At line:1 char:76
++ ...  *Microsoft.MicrosoftSolitaireCollection* | Reset-AppxPackage -ErrorA ...
++                                                 ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Reset-AppxPackage:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+2025-03-06 12:05:24,001 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.MicrosoftSolitaireCollection*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-06 12:05:24,450 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.MicrosoftSolitaireCollection -ErrorAction SilentlyContinue
+2025-03-06 12:05:24,451 - ERROR - Error details: 
+2025-03-06 12:05:25,056 - ERROR - Error running command: Get-AppxPackage -AllUsers -Name *Microsoft.ZuneMusic* | Reset-AppxPackage -ErrorAction SilentlyContinue
+2025-03-06 12:05:25,056 - ERROR - Error details: Reset-AppxPackage : The term 'Reset-AppxPackage' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try 
+again.
+At line:1 char:57
++ ... age -AllUsers -Name *Microsoft.ZuneMusic* | Reset-AppxPackage -ErrorA ...
++                                                 ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Reset-AppxPackage:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+2025-03-06 12:05:25,887 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.ZuneMusic*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-06 12:05:26,307 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.ZuneMusic -ErrorAction SilentlyContinue
+2025-03-06 12:05:26,307 - ERROR - Error details: 
+2025-03-06 12:05:26,909 - ERROR - Error running command: Get-AppxPackage -AllUsers -Name *Microsoft.ZuneVideo* | Reset-AppxPackage -ErrorAction SilentlyContinue
+2025-03-06 12:05:26,909 - ERROR - Error details: Reset-AppxPackage : The term 'Reset-AppxPackage' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try 
+again.
+At line:1 char:57
++ ... age -AllUsers -Name *Microsoft.ZuneVideo* | Reset-AppxPackage -ErrorA ...
++                                                 ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Reset-AppxPackage:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+2025-03-06 12:05:27,709 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.ZuneVideo*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-06 12:05:28,125 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.ZuneVideo -ErrorAction SilentlyContinue
+2025-03-06 12:05:28,125 - ERROR - Error details: 
+2025-03-06 12:05:28,733 - ERROR - Error running command: Get-AppxPackage -AllUsers -Name *king.com.CandyCrushSaga* | Reset-AppxPackage -ErrorAction SilentlyContinue
+2025-03-06 12:05:28,733 - ERROR - Error details: Reset-AppxPackage : The term 'Reset-AppxPackage' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try 
+again.
+At line:1 char:61
++ ... -AllUsers -Name *king.com.CandyCrushSaga* | Reset-AppxPackage -ErrorA ...
++                                                 ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Reset-AppxPackage:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+2025-03-06 12:05:29,464 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*king.com.CandyCrushSaga*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-06 12:05:29,878 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage king.com.CandyCrushSaga -ErrorAction SilentlyContinue
+2025-03-06 12:05:29,878 - ERROR - Error details: 
+2025-03-06 12:05:30,474 - ERROR - Error running command: Get-AppxPackage -AllUsers -Name *Microsoft.Office.OneNote* | Reset-AppxPackage -ErrorAction SilentlyContinue
+2025-03-06 12:05:30,474 - ERROR - Error details: Reset-AppxPackage : The term 'Reset-AppxPackage' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try 
+again.
+At line:1 char:62
++ ... AllUsers -Name *Microsoft.Office.OneNote* | Reset-AppxPackage -ErrorA ...
++                                                 ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Reset-AppxPackage:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+2025-03-06 12:05:31,299 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.Office.OneNote*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-06 12:05:31,745 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.Office.OneNote -ErrorAction SilentlyContinue
+2025-03-06 12:05:31,745 - ERROR - Error details: 
+2025-03-06 12:05:32,408 - ERROR - Error running command: Get-AppxPackage -AllUsers -Name *Microsoft.MicrosoftOfficeHub* | Reset-AppxPackage -ErrorAction SilentlyContinue
+2025-03-06 12:05:32,409 - ERROR - Error details: Reset-AppxPackage : The term 'Reset-AppxPackage' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try 
+again.
+At line:1 char:66
++ ... sers -Name *Microsoft.MicrosoftOfficeHub* | Reset-AppxPackage -ErrorA ...
++                                                 ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Reset-AppxPackage:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+2025-03-06 12:05:33,287 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.MicrosoftOfficeHub*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-06 12:05:33,717 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.MicrosoftOfficeHub -ErrorAction SilentlyContinue
+2025-03-06 12:05:33,717 - ERROR - Error details: 
+2025-03-06 12:05:34,338 - ERROR - Error running command: Get-AppxPackage -AllUsers -Name *Microsoft.MicrosoftStickyNotes* | Reset-AppxPackage -ErrorAction SilentlyContinue
+2025-03-06 12:05:34,338 - ERROR - Error details: Reset-AppxPackage : The term 'Reset-AppxPackage' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try 
+again.
+At line:1 char:68
++ ... rs -Name *Microsoft.MicrosoftStickyNotes* | Reset-AppxPackage -ErrorA ...
++                                                 ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Reset-AppxPackage:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+2025-03-06 12:05:35,112 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.MicrosoftStickyNotes*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-06 12:05:35,524 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.MicrosoftStickyNotes -ErrorAction SilentlyContinue
+2025-03-06 12:05:35,525 - ERROR - Error details: 
+2025-03-06 12:05:36,120 - ERROR - Error running command: Get-AppxPackage -AllUsers -Name *Microsoft.WindowsAlarms* | Reset-AppxPackage -ErrorAction SilentlyContinue
+2025-03-06 12:05:36,120 - ERROR - Error details: Reset-AppxPackage : The term 'Reset-AppxPackage' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try 
+again.
+At line:1 char:61
++ ... -AllUsers -Name *Microsoft.WindowsAlarms* | Reset-AppxPackage -ErrorA ...
++                                                 ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Reset-AppxPackage:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+2025-03-06 12:05:36,905 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.WindowsAlarms*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-06 12:05:37,319 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.WindowsAlarms -ErrorAction SilentlyContinue
+2025-03-06 12:05:37,319 - ERROR - Error details: 
+2025-03-06 12:05:37,925 - ERROR - Error running command: Get-AppxPackage -AllUsers -Name *Microsoft.WindowsCamera* | Reset-AppxPackage -ErrorAction SilentlyContinue
+2025-03-06 12:05:37,925 - ERROR - Error details: Reset-AppxPackage : The term 'Reset-AppxPackage' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try 
+again.
+At line:1 char:61
++ ... -AllUsers -Name *Microsoft.WindowsCamera* | Reset-AppxPackage -ErrorA ...
++                                                 ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Reset-AppxPackage:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+2025-03-06 12:05:38,699 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.WindowsCamera*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-06 12:05:39,101 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.WindowsCamera -ErrorAction SilentlyContinue
+2025-03-06 12:05:39,101 - ERROR - Error details: 
+2025-03-06 12:05:39,723 - ERROR - Error running command: Get-AppxPackage -AllUsers -Name *Microsoft.WindowsFeedbackHub* | Reset-AppxPackage -ErrorAction SilentlyContinue
+2025-03-06 12:05:39,723 - ERROR - Error details: Reset-AppxPackage : The term 'Reset-AppxPackage' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try 
+again.
+At line:1 char:66
++ ... sers -Name *Microsoft.WindowsFeedbackHub* | Reset-AppxPackage -ErrorA ...
++                                                 ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Reset-AppxPackage:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+2025-03-06 12:05:40,512 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.WindowsFeedbackHub*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-06 12:05:40,933 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.WindowsFeedbackHub -ErrorAction SilentlyContinue
+2025-03-06 12:05:40,933 - ERROR - Error details: 
+2025-03-06 12:05:41,559 - ERROR - Error running command: Get-AppxPackage -AllUsers -Name *Microsoft.WindowsMaps* | Reset-AppxPackage -ErrorAction SilentlyContinue
+2025-03-06 12:05:41,559 - ERROR - Error details: Reset-AppxPackage : The term 'Reset-AppxPackage' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try 
+again.
+At line:1 char:59
++ ... e -AllUsers -Name *Microsoft.WindowsMaps* | Reset-AppxPackage -ErrorA ...
++                                                 ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Reset-AppxPackage:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+2025-03-06 12:05:42,336 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.WindowsMaps*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-06 12:05:42,754 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.WindowsMaps -ErrorAction SilentlyContinue
+2025-03-06 12:05:42,754 - ERROR - Error details: 
+2025-03-06 12:05:43,361 - ERROR - Error running command: Get-AppxPackage -AllUsers -Name *Microsoft.WindowsSoundRecorder* | Reset-AppxPackage -ErrorAction SilentlyContinue
+2025-03-06 12:05:43,362 - ERROR - Error details: Reset-AppxPackage : The term 'Reset-AppxPackage' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try 
+again.
+At line:1 char:68
++ ... rs -Name *Microsoft.WindowsSoundRecorder* | Reset-AppxPackage -ErrorA ...
++                                                 ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Reset-AppxPackage:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+2025-03-06 12:05:44,151 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.WindowsSoundRecorder*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-06 12:05:44,563 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.WindowsSoundRecorder -ErrorAction SilentlyContinue
+2025-03-06 12:05:44,563 - ERROR - Error details: 
+2025-03-06 12:05:45,167 - ERROR - Error running command: Get-AppxPackage -AllUsers -Name *Microsoft.GetHelp* | Reset-AppxPackage -ErrorAction SilentlyContinue
+2025-03-06 12:05:45,167 - ERROR - Error details: Reset-AppxPackage : The term 'Reset-AppxPackage' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try 
+again.
+At line:1 char:55
++ ... ckage -AllUsers -Name *Microsoft.GetHelp* | Reset-AppxPackage -ErrorA ...
++                                                 ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Reset-AppxPackage:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+2025-03-06 12:05:45,949 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.GetHelp*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-06 12:05:46,363 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.GetHelp -ErrorAction SilentlyContinue
+2025-03-06 12:05:46,363 - ERROR - Error details: 
+2025-03-06 12:05:47,012 - ERROR - Error running command: Get-AppxPackage -AllUsers -Name *Microsoft.Getstarted* | Reset-AppxPackage -ErrorAction SilentlyContinue
+2025-03-06 12:05:47,012 - ERROR - Error details: Reset-AppxPackage : The term 'Reset-AppxPackage' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try 
+again.
+At line:1 char:58
++ ... ge -AllUsers -Name *Microsoft.Getstarted* | Reset-AppxPackage -ErrorA ...
++                                                 ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Reset-AppxPackage:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+2025-03-06 12:05:47,788 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.Getstarted*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-06 12:05:48,189 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.Getstarted -ErrorAction SilentlyContinue
+2025-03-06 12:05:48,189 - ERROR - Error details: 
+2025-03-06 12:05:48,796 - ERROR - Error running command: Get-AppxPackage -AllUsers -Name *Microsoft.Microsoft3DViewer* | Reset-AppxPackage -ErrorAction SilentlyContinue
+2025-03-06 12:05:48,797 - ERROR - Error details: Reset-AppxPackage : The term 'Reset-AppxPackage' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try 
+again.
+At line:1 char:65
++ ... Users -Name *Microsoft.Microsoft3DViewer* | Reset-AppxPackage -ErrorA ...
++                                                 ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Reset-AppxPackage:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+2025-03-06 12:05:49,589 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.Microsoft3DViewer*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-06 12:05:49,998 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.Microsoft3DViewer -ErrorAction SilentlyContinue
+2025-03-06 12:05:49,998 - ERROR - Error details: 
+2025-03-06 12:05:50,603 - ERROR - Error running command: Get-AppxPackage -AllUsers -Name *Microsoft.Paint3D* | Reset-AppxPackage -ErrorAction SilentlyContinue
+2025-03-06 12:05:50,603 - ERROR - Error details: Reset-AppxPackage : The term 'Reset-AppxPackage' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try 
+again.
+At line:1 char:55
++ ... ckage -AllUsers -Name *Microsoft.Paint3D* | Reset-AppxPackage -ErrorA ...
++                                                 ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Reset-AppxPackage:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+2025-03-06 12:05:51,338 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.Paint3D*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-06 12:05:51,760 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.Paint3D -ErrorAction SilentlyContinue
+2025-03-06 12:05:51,760 - ERROR - Error details: 
+2025-03-06 12:05:52,354 - ERROR - Error running command: Get-AppxPackage -AllUsers -Name *Microsoft.StorePurchaseApp* | Reset-AppxPackage -ErrorAction SilentlyContinue
+2025-03-06 12:05:52,355 - ERROR - Error details: Reset-AppxPackage : The term 'Reset-AppxPackage' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try 
+again.
+At line:1 char:64
++ ... lUsers -Name *Microsoft.StorePurchaseApp* | Reset-AppxPackage -ErrorA ...
++                                                 ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Reset-AppxPackage:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+2025-03-06 12:05:53,153 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.StorePurchaseApp*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-06 12:05:53,585 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.StorePurchaseApp -ErrorAction SilentlyContinue
+2025-03-06 12:05:53,585 - ERROR - Error details: 
+2025-03-06 12:05:54,183 - ERROR - Error running command: Get-AppxPackage -AllUsers -Name *Microsoft.SkypeApp* | Reset-AppxPackage -ErrorAction SilentlyContinue
+2025-03-06 12:05:54,183 - ERROR - Error details: Reset-AppxPackage : The term 'Reset-AppxPackage' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try 
+again.
+At line:1 char:56
++ ... kage -AllUsers -Name *Microsoft.SkypeApp* | Reset-AppxPackage -ErrorA ...
++                                                 ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Reset-AppxPackage:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+2025-03-06 12:05:54,947 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.SkypeApp*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-06 12:05:55,369 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.SkypeApp -ErrorAction SilentlyContinue
+2025-03-06 12:05:55,369 - ERROR - Error details: 
+2025-03-06 12:05:55,981 - ERROR - Error running command: Get-AppxPackage -AllUsers -Name *Microsoft.YourPhone* | Reset-AppxPackage -ErrorAction SilentlyContinue
+2025-03-06 12:05:55,982 - ERROR - Error details: Reset-AppxPackage : The term 'Reset-AppxPackage' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try 
+again.
+At line:1 char:57
++ ... age -AllUsers -Name *Microsoft.YourPhone* | Reset-AppxPackage -ErrorA ...
++                                                 ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Reset-AppxPackage:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+2025-03-06 12:05:56,755 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.YourPhone*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-06 12:05:57,169 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.YourPhone -ErrorAction SilentlyContinue
+2025-03-06 12:05:57,169 - ERROR - Error details: 
+2025-03-06 12:05:57,776 - ERROR - Error running command: Get-AppxPackage -AllUsers -Name *microsoft.windowscommunicationsapps* | Reset-AppxPackage -ErrorAction SilentlyContinue
+2025-03-06 12:05:57,776 - ERROR - Error details: Reset-AppxPackage : The term 'Reset-AppxPackage' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try 
+again.
+At line:1 char:73
++ ... ame *microsoft.windowscommunicationsapps* | Reset-AppxPackage -ErrorA ...
++                                                 ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Reset-AppxPackage:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+2025-03-06 12:05:58,559 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*microsoft.windowscommunicationsapps*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-06 12:05:58,973 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage microsoft.windowscommunicationsapps -ErrorAction SilentlyContinue
+2025-03-06 12:05:58,973 - ERROR - Error details: 
+2025-03-06 12:05:59,566 - ERROR - Error running command: Get-AppxPackage -AllUsers -Name *Microsoft.People* | Reset-AppxPackage -ErrorAction SilentlyContinue
+2025-03-06 12:05:59,566 - ERROR - Error details: Reset-AppxPackage : The term 'Reset-AppxPackage' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try 
+again.
+At line:1 char:54
++ ... ackage -AllUsers -Name *Microsoft.People* | Reset-AppxPackage -ErrorA ...
++                                                 ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Reset-AppxPackage:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+2025-03-06 12:06:00,372 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.People*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-06 12:06:00,784 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.People -ErrorAction SilentlyContinue
+2025-03-06 12:06:00,785 - ERROR - Error details: 
+2025-03-06 12:06:01,401 - ERROR - Error running command: Get-AppxPackage -AllUsers -Name *Microsoft.BingWeather* | Reset-AppxPackage -ErrorAction SilentlyContinue
+2025-03-06 12:06:01,401 - ERROR - Error details: Reset-AppxPackage : The term 'Reset-AppxPackage' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try 
+again.
+At line:1 char:59
++ ... e -AllUsers -Name *Microsoft.BingWeather* | Reset-AppxPackage -ErrorA ...
++                                                 ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Reset-AppxPackage:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+2025-03-06 12:06:02,207 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.BingWeather*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-06 12:06:02,627 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.BingWeather -ErrorAction SilentlyContinue
+2025-03-06 12:06:02,627 - ERROR - Error details: 
+2025-03-06 12:06:03,208 - ERROR - Error running command: Get-AppxPackage -AllUsers -Name *Microsoft.Windows.Photos* | Reset-AppxPackage -ErrorAction SilentlyContinue
+2025-03-06 12:06:03,209 - ERROR - Error details: Reset-AppxPackage : The term 'Reset-AppxPackage' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try 
+again.
+At line:1 char:62
++ ... AllUsers -Name *Microsoft.Windows.Photos* | Reset-AppxPackage -ErrorA ...
++                                                 ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Reset-AppxPackage:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+2025-03-06 12:06:04,004 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.Windows.Photos*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-06 12:06:04,427 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.Windows.Photos -ErrorAction SilentlyContinue
+2025-03-06 12:06:04,427 - ERROR - Error details: 
+2025-03-06 12:06:05,143 - INFO - Successfully ran command: WSReset.exe
+2025-03-06 12:06:05,147 - INFO - Restoration complete. Successfully restored 29 apps.
