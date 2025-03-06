@@ -52,7 +52,7 @@ def choose_selected_apps():
             if idx.isdigit():
                 i = int(idx)
                 if 1 <= i <= len(SELECTABLE_APPS):
-                    chosen_apps.append(SELECTABLE_APPS[i-1]) ayush
+                    chosen_apps.append(SELECTABLE_APPS[i-1])
                 else:
                     invalid_selections.append(idx)
             else:
