@@ -1,0 +1,161 @@
+2025-03-04 22:11:24,100 - INFO - Application started
+2025-03-04 22:11:24,104 - INFO - Creating system restore point
+2025-03-04 22:11:24,686 - INFO - Successfully ran command: Enable-ComputerRestore -Drive "C:\"
+2025-03-04 22:11:32,464 - INFO - Successfully ran command: Checkpoint-Computer -Description "Gaming Bloatware Remover - 2025-03-04_22-11-24" -RestorePointType "APPLICATION_UNINSTALL"
+2025-03-04 22:11:32,485 - INFO - System restore point created successfully
+2025-03-04 22:11:39,368 - INFO - User selected to remove specific apps
+2025-03-04 22:11:49,582 - INFO - User confirmed removal of selected apps: Microsoft.Paint3D
+2025-03-04 22:11:49,586 - INFO - Starting removal of selected apps: Microsoft.Paint3D
+2025-03-04 22:11:49,586 - INFO - Attempting to remove Microsoft.Paint3D
+2025-03-04 22:11:50,274 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Paint3D* | Remove-AppxPackage
+2025-03-04 22:11:50,274 - INFO - Successfully removed app Microsoft.Paint3D
+2025-03-04 22:11:50,639 - INFO - Successfully ran command: if (Test-Path 'Registry::HKEY_CLASSES_ROOT\Extensions\ContractId\Windows.Launch\PackageId\Microsoft.MSPaint') { Remove-Item -Path 'Registry::HKEY_CLASSES_ROOT\Extensions\ContractId\Windows.Launch\PackageId\Microsoft.MSPaint' -Recurse -Force }
+2025-03-04 22:11:50,959 - INFO - Successfully ran command: if (Test-Path 'Registry::HKEY_CLASSES_ROOT\Extensions\ContractId\Windows.Protocol\PackageId\Microsoft.MSPaint') { Remove-Item -Path 'Registry::HKEY_CLASSES_ROOT\Extensions\ContractId\Windows.Protocol\PackageId\Microsoft.MSPaint' -Recurse -Force }
+2025-03-04 22:11:50,959 - INFO - Successfully removed all registry keys for Microsoft.Paint3D
+2025-03-04 22:11:50,987 - INFO - Removal complete. Successfully removed 1 apps.
+2025-03-04 22:12:09,923 - INFO - User selected to remove specific apps
+2025-03-04 22:12:15,631 - INFO - User confirmed removal of selected apps: Microsoft.SkypeApp
+2025-03-04 22:12:15,638 - INFO - Starting removal of selected apps: Microsoft.SkypeApp
+2025-03-04 22:12:15,638 - INFO - Attempting to remove Microsoft.SkypeApp
+2025-03-04 22:12:17,192 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.SkypeApp* | Remove-AppxPackage
+2025-03-04 22:12:17,192 - INFO - Successfully removed app Microsoft.SkypeApp
+2025-03-04 22:12:17,546 - INFO - Successfully ran command: if (Test-Path 'HKCR:\Extensions\ContractId\Windows.Launch\PackageId\Microsoft.SkypeApp') { Remove-Item -Path 'HKCR:\Extensions\ContractId\Windows.Launch\PackageId\Microsoft.SkypeApp' -Recurse -Force }
+2025-03-04 22:12:17,876 - INFO - Successfully ran command: if (Test-Path 'HKCR:\Extensions\ContractId\Windows.Protocol\PackageId\Microsoft.SkypeApp') { Remove-Item -Path 'HKCR:\Extensions\ContractId\Windows.Protocol\PackageId\Microsoft.SkypeApp' -Recurse -Force }
+2025-03-04 22:12:17,876 - INFO - Successfully removed all registry keys for Microsoft.SkypeApp
+2025-03-04 22:12:17,923 - INFO - Removal complete. Successfully removed 1 apps.
+2025-03-04 22:12:54,004 - INFO - User selected to remove specific apps
+2025-03-04 22:13:03,492 - INFO - User confirmed removal of selected apps: Microsoft.Office.OneNote
+2025-03-04 22:13:03,501 - INFO - Starting removal of selected apps: Microsoft.Office.OneNote
+2025-03-04 22:13:03,501 - INFO - Attempting to remove Microsoft.Office.OneNote
+2025-03-04 22:13:04,833 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Office.OneNote* | Remove-AppxPackage
+2025-03-04 22:13:04,833 - INFO - Successfully removed app Microsoft.Office.OneNote
+2025-03-04 22:13:04,864 - INFO - Successfully removed all registry keys for Microsoft.Office.OneNote
+2025-03-04 22:13:04,870 - INFO - Removal complete. Successfully removed 1 apps.
+2025-03-04 22:13:39,904 - INFO - User selected to remove specific apps
+2025-03-04 22:13:49,041 - INFO - User confirmed removal of selected apps: Microsoft.WindowsCamera
+2025-03-04 22:13:49,050 - INFO - Starting removal of selected apps: Microsoft.WindowsCamera
+2025-03-04 22:13:49,050 - INFO - Attempting to remove Microsoft.WindowsCamera
+2025-03-04 22:13:50,088 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsCamera* | Remove-AppxPackage
+2025-03-04 22:13:50,088 - INFO - Successfully removed app Microsoft.WindowsCamera
+2025-03-04 22:13:50,118 - INFO - Successfully removed all registry keys for Microsoft.WindowsCamera
+2025-03-04 22:13:50,124 - INFO - Removal complete. Successfully removed 1 apps.
+2025-03-04 22:19:20,949 - INFO - User selected to remove specific apps
+2025-03-04 22:19:29,675 - INFO - User confirmed removal of selected apps: Microsoft.CandyCrushSaga
+2025-03-04 22:19:29,681 - INFO - Starting removal of selected apps: Microsoft.CandyCrushSaga
+2025-03-04 22:19:29,681 - INFO - Attempting to remove Microsoft.CandyCrushSaga
+2025-03-04 22:19:30,320 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.CandyCrushSaga* | Remove-AppxPackage
+2025-03-04 22:19:30,320 - INFO - Successfully removed app Microsoft.CandyCrushSaga
+2025-03-04 22:19:30,690 - INFO - Successfully ran command: if (Test-Path 'Registry::HKEY_CLASSES_ROOT\Extensions\ContractId\Windows.Launch\PackageId\King.CandyCrushSaga') { Remove-Item -Path 'Registry::HKEY_CLASSES_ROOT\Extensions\ContractId\Windows.Launch\PackageId\King.CandyCrushSaga' -Recurse -Force }
+2025-03-04 22:19:31,014 - INFO - Successfully ran command: if (Test-Path 'Registry::HKEY_CLASSES_ROOT\Extensions\ContractId\Windows.Protocol\PackageId\King.CandyCrushSaga') { Remove-Item -Path 'Registry::HKEY_CLASSES_ROOT\Extensions\ContractId\Windows.Protocol\PackageId\King.CandyCrushSaga' -Recurse -Force }
+2025-03-04 22:19:31,014 - INFO - Successfully removed all registry keys for Microsoft.CandyCrushSaga
+2025-03-04 22:19:31,068 - INFO - Removal complete. Successfully removed 1 apps.
+2025-03-04 22:24:26,508 - INFO - User selected to remove specific apps
+2025-03-04 22:24:32,443 - INFO - User confirmed removal of selected apps: Microsoft.WindowsAlarms
+2025-03-04 22:24:32,450 - INFO - Starting removal of selected apps: Microsoft.WindowsAlarms
+2025-03-04 22:24:32,450 - INFO - Attempting to remove Microsoft.WindowsAlarms
+2025-03-04 22:24:33,912 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsAlarms* | Remove-AppxPackage
+2025-03-04 22:24:33,912 - INFO - Successfully removed app Microsoft.WindowsAlarms
+2025-03-04 22:24:33,940 - INFO - Successfully removed all registry keys for Microsoft.WindowsAlarms
+2025-03-04 22:24:33,945 - INFO - Removal complete. Successfully removed 1 apps.
+2025-03-04 23:32:44,338 - INFO - Application started
+2025-03-04 23:32:44,341 - INFO - Creating system restore point
+2025-03-04 23:32:44,752 - INFO - Successfully ran command: Enable-ComputerRestore -Drive "C:\"
+2025-03-04 23:32:45,217 - INFO - Successfully ran command: Checkpoint-Computer -Description "Gaming Bloatware Remover - 2025-03-04_23-32-44" -RestorePointType "APPLICATION_UNINSTALL"
+2025-03-04 23:32:45,252 - INFO - System restore point created successfully
+2025-03-04 23:32:48,915 - INFO - User selected to remove specific apps
+2025-03-04 23:33:04,572 - INFO - User confirmed removal of selected apps: Microsoft.Paint3D
+2025-03-04 23:33:04,578 - INFO - Starting removal of selected apps: Microsoft.Paint3D
+2025-03-04 23:33:04,578 - INFO - Attempting to remove Microsoft.Paint3D
+2025-03-04 23:33:05,060 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Paint3D* | Remove-AppxPackage
+2025-03-04 23:33:05,060 - INFO - Successfully removed app Microsoft.Paint3D
+2025-03-04 23:33:05,403 - INFO - Successfully ran command: if (Test-Path 'Registry::HKEY_CLASSES_ROOT\Extensions\ContractId\Windows.Launch\PackageId\Microsoft.MSPaint') { Remove-Item -Path 'Registry::HKEY_CLASSES_ROOT\Extensions\ContractId\Windows.Launch\PackageId\Microsoft.MSPaint' -Recurse -Force }
+2025-03-04 23:33:05,732 - INFO - Successfully ran command: if (Test-Path 'Registry::HKEY_CLASSES_ROOT\Extensions\ContractId\Windows.Protocol\PackageId\Microsoft.MSPaint') { Remove-Item -Path 'Registry::HKEY_CLASSES_ROOT\Extensions\ContractId\Windows.Protocol\PackageId\Microsoft.MSPaint' -Recurse -Force }
+2025-03-04 23:33:05,732 - INFO - Successfully removed all registry keys for Microsoft.Paint3D
+2025-03-04 23:33:05,775 - INFO - Removal complete. Successfully removed 1 apps.
+2025-03-04 23:33:22,033 - INFO - User selected to remove specific apps
+2025-03-04 23:33:33,790 - INFO - User confirmed removal of selected apps: Microsoft.MicrosoftStickyNotes
+2025-03-04 23:33:33,795 - INFO - Starting removal of selected apps: Microsoft.MicrosoftStickyNotes
+2025-03-04 23:33:33,796 - INFO - Attempting to remove Microsoft.MicrosoftStickyNotes
+2025-03-04 23:33:35,400 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.MicrosoftStickyNotes* | Remove-AppxPackage
+2025-03-04 23:33:35,400 - INFO - Successfully removed app Microsoft.MicrosoftStickyNotes
+2025-03-04 23:33:35,406 - INFO - Successfully removed all registry keys for Microsoft.MicrosoftStickyNotes
+2025-03-04 23:33:35,411 - INFO - Removal complete. Successfully removed 1 apps.
+2025-03-05 09:11:41,281 - INFO - Application started
+2025-03-05 09:11:41,284 - INFO - Creating system restore point
+2025-03-05 09:11:41,679 - INFO - Successfully ran command: Enable-ComputerRestore -Drive "C:\"
+2025-03-05 09:11:42,139 - INFO - Successfully ran command: Checkpoint-Computer -Description "Gaming Bloatware Remover - 2025-03-05_09-11-41" -RestorePointType "APPLICATION_UNINSTALL"
+2025-03-05 09:11:42,161 - INFO - System restore point created successfully
+2025-03-05 09:11:52,807 - INFO - User selected to remove specific apps
+2025-03-05 09:14:20,451 - INFO - App selection cancelled by user
+2025-03-06 10:14:00,142 - INFO - Application started
+2025-03-06 10:14:00,142 - INFO - Creating system restore point
+2025-03-06 10:14:00,588 - ERROR - Error running command: Enable-ComputerRestore -Drive "C:\"
+2025-03-06 10:14:00,588 - ERROR - Error details: Enable-ComputerRestore : Access denied 
+At line:1 char:1
++ Enable-ComputerRestore -Drive "C:\"
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Enable-ComputerRestore], ManagementException
+    + FullyQualifiedErrorId : GetWMIManagementException,Microsoft.PowerShell.Commands.EnableComputerRestoreCommand
+ 
+
+2025-03-06 10:14:00,588 - WARNING - Could not enable system restore: Enable-ComputerRestore : Access denied 
+At line:1 char:1
++ Enable-ComputerRestore -Drive "C:\"
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Enable-ComputerRestore], ManagementException
+    + FullyQualifiedErrorId : GetWMIManagementException,Microsoft.PowerShell.Commands.EnableComputerRestoreCommand
+ 
+
+2025-03-06 10:14:01,905 - ERROR - Error running command: Checkpoint-Computer -Description "Gaming Bloatware Remover - 2025-03-06_10-14-00" -RestorePointType "APPLICATION_UNINSTALL"
+2025-03-06 10:14:01,906 - ERROR - Error details: Checkpoint-Computer : Access denied 
+At line:1 char:1
++ Checkpoint-Computer -Description "Gaming Bloatware Remover - 2025-03- ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Checkpoint-Computer], ManagementException
+    + FullyQualifiedErrorId : GetWMIManagementException,Microsoft.PowerShell.Commands.CheckpointComputerCommand
+ 
+
+2025-03-06 10:14:01,906 - WARNING - Could not create system restore point: Checkpoint-Computer : Access denied 
+At line:1 char:1
++ Checkpoint-Computer -Description "Gaming Bloatware Remover - 2025-03- ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Checkpoint-Computer], ManagementException
+    + FullyQualifiedErrorId : GetWMIManagementException,Microsoft.PowerShell.Commands.CheckpointComputerCommand
+ 
+
+2025-03-06 10:14:06,356 - INFO - Application started
+2025-03-06 10:14:06,356 - INFO - Creating system restore point
+2025-03-06 10:14:06,644 - ERROR - Error running command: Enable-ComputerRestore -Drive "C:\"
+2025-03-06 10:14:06,644 - ERROR - Error details: Enable-ComputerRestore : Access denied 
+At line:1 char:1
++ Enable-ComputerRestore -Drive "C:\"
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Enable-ComputerRestore], ManagementException
+    + FullyQualifiedErrorId : GetWMIManagementException,Microsoft.PowerShell.Commands.EnableComputerRestoreCommand
+ 
+
+2025-03-06 10:14:06,644 - WARNING - Could not enable system restore: Enable-ComputerRestore : Access denied 
+At line:1 char:1
++ Enable-ComputerRestore -Drive "C:\"
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Enable-ComputerRestore], ManagementException
+    + FullyQualifiedErrorId : GetWMIManagementException,Microsoft.PowerShell.Commands.EnableComputerRestoreCommand
+ 
+
+2025-03-06 10:14:07,949 - ERROR - Error running command: Checkpoint-Computer -Description "Gaming Bloatware Remover - 2025-03-06_10-14-06" -RestorePointType "APPLICATION_UNINSTALL"
+2025-03-06 10:14:07,949 - ERROR - Error details: Checkpoint-Computer : Access denied 
+At line:1 char:1
++ Checkpoint-Computer -Description "Gaming Bloatware Remover - 2025-03- ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Checkpoint-Computer], ManagementException
+    + FullyQualifiedErrorId : GetWMIManagementException,Microsoft.PowerShell.Commands.CheckpointComputerCommand
+ 
+
+2025-03-06 10:14:07,949 - WARNING - Could not create system restore point: Checkpoint-Computer : Access denied 
+At line:1 char:1
++ Checkpoint-Computer -Description "Gaming Bloatware Remover - 2025-03- ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Checkpoint-Computer], ManagementException
+    + FullyQualifiedErrorId : GetWMIManagementException,Microsoft.PowerShell.Commands.CheckpointComputerCommand
+ 
+
