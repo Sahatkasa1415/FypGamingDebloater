@@ -25,7 +25,7 @@ APPS = {
         "registry_keys": []
     },
     "Microsoft.XboxGameOverlay": {
-        "description": "Xbox Game Overlay1",
+        "description": "Xbox Game Overlay",
         "registry_keys": []
     },
     "Microsoft.XboxGamingOverlay": {
