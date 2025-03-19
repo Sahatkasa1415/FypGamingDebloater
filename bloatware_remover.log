@@ -1206,3 +1206,60 @@ At line:1 char:62
 2025-03-06 12:06:04,427 - ERROR - Error details: 
 2025-03-06 12:06:05,143 - INFO - Successfully ran command: WSReset.exe
 2025-03-06 12:06:05,147 - INFO - Restoration complete. Successfully restored 29 apps.
+2025-03-17 05:09:44,322 - INFO - Application started
+2025-03-17 05:09:44,324 - INFO - Creating system restore point
+2025-03-17 05:09:47,254 - INFO - Successfully ran command: Get-ComputerRestorePoint
+2025-03-17 05:09:50,965 - ERROR - Error running command: Checkpoint-Computer -Description "Gaming Bloatware Remover - 2025-03-17_05-09-44" -RestorePointType "APPLICATION_UNINSTALL"
+2025-03-17 05:09:50,965 - ERROR - Error details: Checkpoint-Computer : This command cannot be run due to the following error: the service cannot be started because it 
+is disabled or does not have enabled devices associated with it.
+At line:1 char:1
++ Checkpoint-Computer -Description "Gaming Bloatware Remover - 2025-03- ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Checkpoint-Computer], ArgumentException
+    + FullyQualifiedErrorId : ServiceDisabled,Microsoft.PowerShell.Commands.CheckpointComputerCommand
+ 
+
+2025-03-17 05:09:50,984 - WARNING - Could not create system restore point: Checkpoint-Computer : This command cannot be run due to the following error: the service cannot be started because it 
+is disabled or does not have enabled devices associated with it.
+At line:1 char:1
++ Checkpoint-Computer -Description "Gaming Bloatware Remover - 2025-03- ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Checkpoint-Computer], ArgumentException
+    + FullyQualifiedErrorId : ServiceDisabled,Microsoft.PowerShell.Commands.CheckpointComputerCommand
+ 
+
+2025-03-19 13:21:38,885 - INFO - Starting removal of selected apps: Microsoft.SkypeApp
+2025-03-19 13:21:38,887 - INFO - Attempting to remove Microsoft.SkypeApp
+2025-03-19 13:21:42,666 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.SkypeApp* | Remove-AppxPackage
+2025-03-19 13:21:42,666 - INFO - Successfully removed app Microsoft.SkypeApp
+2025-03-19 13:21:44,015 - INFO - Successfully ran command: if (Test-Path 'HKCR:\Extensions\ContractId\Windows.Launch\PackageId\Microsoft.SkypeApp') { Remove-Item -Path 'HKCR:\Extensions\ContractId\Windows.Launch\PackageId\Microsoft.SkypeApp' -Recurse -Force }
+2025-03-19 13:21:45,209 - INFO - Successfully ran command: if (Test-Path 'HKCR:\Extensions\ContractId\Windows.Protocol\PackageId\Microsoft.SkypeApp') { Remove-Item -Path 'HKCR:\Extensions\ContractId\Windows.Protocol\PackageId\Microsoft.SkypeApp' -Recurse -Force }
+2025-03-19 13:21:45,209 - INFO - Successfully removed all registry keys for Microsoft.SkypeApp
+2025-03-19 13:21:45,212 - INFO - Removal complete. Successfully removed 1 apps.
+2025-03-19 13:59:33,828 - INFO - Creating system restore point
+2025-03-19 13:59:34,853 - INFO - Successfully ran command: Get-ComputerRestorePoint
+2025-03-19 13:59:36,423 - ERROR - Error running command: Checkpoint-Computer -Description "Gaming Bloatware Remover - 2025-03-19_13-59-33" -RestorePointType "APPLICATION_UNINSTALL"
+2025-03-19 13:59:36,423 - ERROR - Error details: Checkpoint-Computer : This command cannot be run due to the following error: the service cannot be started because it 
+is disabled or does not have enabled devices associated with it.
+At line:1 char:1
++ Checkpoint-Computer -Description "Gaming Bloatware Remover - 2025-03- ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Checkpoint-Computer], ArgumentException
+    + FullyQualifiedErrorId : ServiceDisabled,Microsoft.PowerShell.Commands.CheckpointComputerCommand
+ 
+
+2025-03-19 13:59:36,446 - WARNING - Could not create system restore point: Checkpoint-Computer : This command cannot be run due to the following error: the service cannot be started because it 
+is disabled or does not have enabled devices associated with it.
+At line:1 char:1
++ Checkpoint-Computer -Description "Gaming Bloatware Remover - 2025-03- ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Checkpoint-Computer], ArgumentException
+    + FullyQualifiedErrorId : ServiceDisabled,Microsoft.PowerShell.Commands.CheckpointComputerCommand
+ 
+
+2025-03-19 14:10:50,969 - INFO - Starting removal of selected apps: Microsoft.BingWeather
+2025-03-19 14:10:50,969 - INFO - Attempting to remove Microsoft.BingWeather
+2025-03-19 14:10:52,453 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.BingWeather* | Remove-AppxPackage
+2025-03-19 14:10:52,453 - INFO - Successfully removed app Microsoft.BingWeather
+2025-03-19 14:10:52,470 - INFO - Successfully removed all registry keys for Microsoft.BingWeather
+2025-03-19 14:10:52,473 - INFO - Removal complete. Successfully removed 1 apps.
