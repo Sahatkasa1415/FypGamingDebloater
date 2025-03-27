@@ -1263,3 +1263,505 @@ At line:1 char:1
 2025-03-19 14:10:52,453 - INFO - Successfully removed app Microsoft.BingWeather
 2025-03-19 14:10:52,470 - INFO - Successfully removed all registry keys for Microsoft.BingWeather
 2025-03-19 14:10:52,473 - INFO - Removal complete. Successfully removed 1 apps.
+2025-03-27 04:30:49,118 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.XboxApp*
+2025-03-27 04:30:50,555 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Xbox.TCUI*
+2025-03-27 04:30:51,973 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.XboxGameOverlay*
+2025-03-27 04:30:53,430 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.XboxGamingOverlay*
+2025-03-27 04:30:54,884 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.XboxIdentityProvider*
+2025-03-27 04:30:56,414 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.XboxSpeechToTextOverlay*
+2025-03-27 04:30:57,951 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.MicrosoftSolitaireCollection*
+2025-03-27 04:30:59,511 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.ZuneMusic*
+2025-03-27 04:31:01,183 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.ZuneVideo*
+2025-03-27 04:31:02,561 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *king.com.CandyCrushSaga*
+2025-03-27 04:31:03,249 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.Office.OneNote*
+2025-03-27 04:31:03,250 - ERROR - Error details: 
+2025-03-27 04:31:05,109 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.MicrosoftOfficeHub*
+2025-03-27 04:31:06,430 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.MicrosoftStickyNotes*
+2025-03-27 04:31:06,431 - ERROR - Error details: 
+2025-03-27 04:31:07,228 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.WindowsAlarms*
+2025-03-27 04:31:07,229 - ERROR - Error details: 
+2025-03-27 04:31:09,020 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsCamera*
+2025-03-27 04:31:10,502 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsFeedbackHub*
+2025-03-27 04:31:12,183 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsMaps*
+2025-03-27 04:31:13,649 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsSoundRecorder*
+2025-03-27 04:31:15,165 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.GetHelp*
+2025-03-27 04:31:16,686 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Getstarted*
+2025-03-27 04:31:18,223 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Microsoft3DViewer*
+2025-03-27 04:31:19,657 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Paint3D*
+2025-03-27 04:31:21,197 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.StorePurchaseApp*
+2025-03-27 04:31:22,690 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.SkypeApp*
+2025-03-27 04:31:24,188 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.YourPhone*
+2025-03-27 04:31:25,703 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *microsoft.windowscommunicationsapps*
+2025-03-27 04:31:27,233 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.People*
+2025-03-27 04:31:28,791 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.BingWeather*
+2025-03-27 04:31:30,359 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Windows.Photos*
+2025-03-27 04:31:30,360 - ERROR - Error loading available apps: Too early to create variable: no default root window
+2025-03-27 04:34:15,462 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.XboxApp*
+2025-03-27 04:34:16,910 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Xbox.TCUI*
+2025-03-27 04:34:18,453 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.XboxGameOverlay*
+2025-03-27 04:34:20,163 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.XboxGamingOverlay*
+2025-03-27 04:34:21,967 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.XboxIdentityProvider*
+2025-03-27 04:34:24,037 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.XboxSpeechToTextOverlay*
+2025-03-27 04:34:26,295 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.MicrosoftSolitaireCollection*
+2025-03-27 04:34:27,921 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.ZuneMusic*
+2025-03-27 04:34:29,494 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.ZuneVideo*
+2025-03-27 04:34:31,051 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *king.com.CandyCrushSaga*
+2025-03-27 04:34:32,668 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Office.OneNote*
+2025-03-27 04:34:34,643 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.MicrosoftOfficeHub*
+2025-03-27 04:34:36,323 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.MicrosoftStickyNotes*
+2025-03-27 04:34:37,824 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsAlarms*
+2025-03-27 04:34:39,308 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsCamera*
+2025-03-27 04:34:40,815 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsFeedbackHub*
+2025-03-27 04:34:42,540 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsMaps*
+2025-03-27 04:34:44,054 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsSoundRecorder*
+2025-03-27 04:34:45,614 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.GetHelp*
+2025-03-27 04:34:45,614 - ERROR - Error details: 
+2025-03-27 04:34:47,184 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Getstarted*
+2025-03-27 04:34:48,783 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Microsoft3DViewer*
+2025-03-27 04:34:50,216 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Paint3D*
+2025-03-27 04:34:51,547 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.StorePurchaseApp*
+2025-03-27 04:34:51,547 - ERROR - Error details: 
+2025-03-27 04:34:53,116 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.SkypeApp*
+2025-03-27 04:34:54,674 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.YourPhone*
+2025-03-27 04:34:56,380 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *microsoft.windowscommunicationsapps*
+2025-03-27 04:34:57,981 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.People*
+2025-03-27 04:34:59,514 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.BingWeather*
+2025-03-27 04:35:01,115 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Windows.Photos*
+2025-03-27 04:35:01,116 - ERROR - Error loading available apps: Too early to create variable: no default root window
+2025-03-27 04:39:50,962 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.XboxApp*
+2025-03-27 04:39:52,425 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Xbox.TCUI*
+2025-03-27 04:39:53,940 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.XboxGameOverlay*
+2025-03-27 04:39:55,439 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.XboxGamingOverlay*
+2025-03-27 04:39:56,822 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.XboxIdentityProvider*
+2025-03-27 04:39:56,822 - ERROR - Error details: 
+2025-03-27 04:39:58,457 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.XboxSpeechToTextOverlay*
+2025-03-27 04:39:59,551 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.MicrosoftSolitaireCollection*
+2025-03-27 04:39:59,551 - ERROR - Error details: 
+2025-03-27 04:40:00,289 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.ZuneMusic*
+2025-03-27 04:40:00,289 - ERROR - Error details: 
+2025-03-27 04:40:01,147 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.ZuneVideo*
+2025-03-27 04:40:01,147 - ERROR - Error details: 
+2025-03-27 04:40:01,891 - ERROR - Error running command: Get-AppxPackage -AllUsers *king.com.CandyCrushSaga*
+2025-03-27 04:40:01,892 - ERROR - Error details: 
+2025-03-27 04:40:02,606 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.Office.OneNote*
+2025-03-27 04:40:02,607 - ERROR - Error details: 
+2025-03-27 04:40:03,317 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.MicrosoftOfficeHub*
+2025-03-27 04:40:03,317 - ERROR - Error details: 
+2025-03-27 04:40:04,020 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.MicrosoftStickyNotes*
+2025-03-27 04:40:04,020 - ERROR - Error details: 
+2025-03-27 04:40:04,616 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.WindowsAlarms*
+2025-03-27 04:40:04,616 - ERROR - Error details: 
+2025-03-27 04:40:04,861 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.WindowsCamera*
+2025-03-27 04:40:04,862 - ERROR - Error details: 
+2025-03-27 04:40:05,155 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.WindowsFeedbackHub*
+2025-03-27 04:40:05,156 - ERROR - Error details: 
+2025-03-27 04:40:05,422 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.WindowsMaps*
+2025-03-27 04:40:05,422 - ERROR - Error details: 
+2025-03-27 04:40:05,696 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.WindowsSoundRecorder*
+2025-03-27 04:40:05,696 - ERROR - Error details: 
+2025-03-27 04:40:05,990 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.GetHelp*
+2025-03-27 04:40:05,990 - ERROR - Error details: 
+2025-03-27 04:40:06,253 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.Getstarted*
+2025-03-27 04:40:06,253 - ERROR - Error details: 
+2025-03-27 04:40:06,556 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.Microsoft3DViewer*
+2025-03-27 04:40:06,556 - ERROR - Error details: 
+2025-03-27 04:40:06,831 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.Paint3D*
+2025-03-27 04:40:06,831 - ERROR - Error details: 
+2025-03-27 04:40:07,113 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.StorePurchaseApp*
+2025-03-27 04:40:07,113 - ERROR - Error details: 
+2025-03-27 04:40:07,385 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.SkypeApp*
+2025-03-27 04:40:07,385 - ERROR - Error details: 
+2025-03-27 04:40:07,680 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.YourPhone*
+2025-03-27 04:40:07,680 - ERROR - Error details: 
+2025-03-27 04:40:07,959 - ERROR - Error running command: Get-AppxPackage -AllUsers *microsoft.windowscommunicationsapps*
+2025-03-27 04:40:07,959 - ERROR - Error details: 
+2025-03-27 04:40:08,252 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.People*
+2025-03-27 04:40:08,252 - ERROR - Error details: 
+2025-03-27 04:40:08,644 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.BingWeather*
+2025-03-27 04:40:08,644 - ERROR - Error details: 
+2025-03-27 04:40:08,942 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.Windows.Photos*
+2025-03-27 04:40:08,942 - ERROR - Error details: 
+2025-03-27 04:41:08,460 - INFO - Creating system restore point
+2025-03-27 04:41:10,154 - INFO - Successfully ran command: Get-ComputerRestorePoint
+2025-03-27 04:41:12,706 - ERROR - Error running command: Checkpoint-Computer -Description "Gaming Bloatware Remover - 2025-03-27_04-41-08" -RestorePointType "APPLICATION_UNINSTALL"
+2025-03-27 04:41:12,706 - ERROR - Error details: Checkpoint-Computer : This command cannot be run due to the following error: the service cannot be started because it 
+is disabled or does not have enabled devices associated with it.
+At line:1 char:1
++ Checkpoint-Computer -Description "Gaming Bloatware Remover - 2025-03- ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Checkpoint-Computer], ArgumentException
+    + FullyQualifiedErrorId : ServiceDisabled,Microsoft.PowerShell.Commands.CheckpointComputerCommand
+ 
+
+2025-03-27 04:41:12,708 - WARNING - Could not create system restore point: Checkpoint-Computer : This command cannot be run due to the following error: the service cannot be started because it 
+is disabled or does not have enabled devices associated with it.
+At line:1 char:1
++ Checkpoint-Computer -Description "Gaming Bloatware Remover - 2025-03- ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Checkpoint-Computer], ArgumentException
+    + FullyQualifiedErrorId : ServiceDisabled,Microsoft.PowerShell.Commands.CheckpointComputerCommand
+ 
+
+2025-03-27 04:41:46,468 - INFO - Starting reinstallation of selected apps: Microsoft.XboxGamingOverlay, Microsoft.XboxSpeechToTextOverlay, Microsoft.MicrosoftSolitaireCollection, Microsoft.ZuneMusic, Microsoft.ZuneVideo, king.com.CandyCrushSaga, Microsoft.Office.OneNote, Microsoft.MicrosoftOfficeHub, Microsoft.MicrosoftStickyNotes, Microsoft.WindowsAlarms, Microsoft.WindowsCamera, Microsoft.WindowsFeedbackHub, Microsoft.WindowsMaps, Microsoft.WindowsSoundRecorder, Microsoft.GetHelp, Microsoft.Getstarted, Microsoft.Microsoft3DViewer, Microsoft.Paint3D, Microsoft.StorePurchaseApp, Microsoft.SkypeApp, Microsoft.YourPhone, microsoft.windowscommunicationsapps, Microsoft.People, Microsoft.BingWeather, Microsoft.Windows.Photos
+2025-03-27 04:41:46,470 - INFO - Creating system restore point
+2025-03-27 04:41:47,655 - INFO - Successfully ran command: Get-ComputerRestorePoint
+2025-03-27 04:41:50,086 - ERROR - Error running command: Checkpoint-Computer -Description "Gaming Bloatware Remover - 2025-03-27_04-41-46" -RestorePointType "APPLICATION_UNINSTALL"
+2025-03-27 04:41:50,086 - ERROR - Error details: Checkpoint-Computer : This command cannot be run due to the following error: the service cannot be started because it 
+is disabled or does not have enabled devices associated with it.
+At line:1 char:1
++ Checkpoint-Computer -Description "Gaming Bloatware Remover - 2025-03- ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Checkpoint-Computer], ArgumentException
+    + FullyQualifiedErrorId : ServiceDisabled,Microsoft.PowerShell.Commands.CheckpointComputerCommand
+ 
+
+2025-03-27 04:41:50,145 - WARNING - Could not create system restore point: Checkpoint-Computer : This command cannot be run due to the following error: the service cannot be started because it 
+is disabled or does not have enabled devices associated with it.
+At line:1 char:1
++ Checkpoint-Computer -Description "Gaming Bloatware Remover - 2025-03- ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Checkpoint-Computer], ArgumentException
+    + FullyQualifiedErrorId : ServiceDisabled,Microsoft.PowerShell.Commands.CheckpointComputerCommand
+ 
+
+2025-03-27 04:41:50,147 - INFO - Attempting to reinstall Microsoft.XboxGamingOverlay
+2025-03-27 04:41:51,636 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.XboxGamingOverlay* | Add-AppxPackage -Register "$($_.InstallLocation)\AppXManifest.xml" -DisableDevelopmentMode -ErrorAction SilentlyContinue
+2025-03-27 04:41:51,636 - ERROR - Error details: 
+2025-03-27 04:41:53,962 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.XboxGamingOverlay*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-27 04:41:55,464 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.XboxGamingOverlay -ErrorAction SilentlyContinue
+2025-03-27 04:41:55,464 - ERROR - Error details: 
+2025-03-27 04:41:56,990 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.XboxGamingOverlay*
+2025-03-27 04:41:57,023 - INFO - Successfully reinstalled Microsoft.XboxGamingOverlay
+2025-03-27 04:41:57,025 - INFO - Attempting to reinstall Microsoft.XboxSpeechToTextOverlay
+2025-03-27 04:41:58,435 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.XboxSpeechToTextOverlay* | Add-AppxPackage -Register "$($_.InstallLocation)\AppXManifest.xml" -DisableDevelopmentMode -ErrorAction SilentlyContinue
+2025-03-27 04:41:58,435 - ERROR - Error details: 
+2025-03-27 04:42:00,424 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.XboxSpeechToTextOverlay*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-27 04:42:01,890 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.XboxSpeechToTextOverlay -ErrorAction SilentlyContinue
+2025-03-27 04:42:01,891 - ERROR - Error details: 
+2025-03-27 04:42:03,427 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.XboxSpeechToTextOverlay*
+2025-03-27 04:42:03,448 - INFO - Successfully reinstalled Microsoft.XboxSpeechToTextOverlay
+2025-03-27 04:42:03,450 - INFO - Attempting to reinstall Microsoft.MicrosoftSolitaireCollection
+2025-03-27 04:42:04,844 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.MicrosoftSolitaireCollection* | Add-AppxPackage -Register "$($_.InstallLocation)\AppXManifest.xml" -DisableDevelopmentMode -ErrorAction SilentlyContinue
+2025-03-27 04:42:04,844 - ERROR - Error details: 
+2025-03-27 04:42:06,882 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.MicrosoftSolitaireCollection*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-27 04:42:08,352 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.MicrosoftSolitaireCollection -ErrorAction SilentlyContinue
+2025-03-27 04:42:08,352 - ERROR - Error details: 
+2025-03-27 04:42:09,879 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.MicrosoftSolitaireCollection*
+2025-03-27 04:42:09,911 - INFO - Successfully reinstalled Microsoft.MicrosoftSolitaireCollection
+2025-03-27 04:42:09,913 - INFO - Attempting to reinstall Microsoft.ZuneMusic
+2025-03-27 04:42:11,283 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.ZuneMusic* | Add-AppxPackage -Register "$($_.InstallLocation)\AppXManifest.xml" -DisableDevelopmentMode -ErrorAction SilentlyContinue
+2025-03-27 04:42:11,283 - ERROR - Error details: 
+2025-03-27 04:42:13,280 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.ZuneMusic*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-27 04:42:14,742 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.ZuneMusic -ErrorAction SilentlyContinue
+2025-03-27 04:42:14,742 - ERROR - Error details: 
+2025-03-27 04:42:16,246 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.ZuneMusic*
+2025-03-27 04:42:16,273 - INFO - Successfully reinstalled Microsoft.ZuneMusic
+2025-03-27 04:42:16,275 - INFO - Attempting to reinstall Microsoft.ZuneVideo
+2025-03-27 04:42:17,671 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.ZuneVideo* | Add-AppxPackage -Register "$($_.InstallLocation)\AppXManifest.xml" -DisableDevelopmentMode -ErrorAction SilentlyContinue
+2025-03-27 04:42:17,671 - ERROR - Error details: 
+2025-03-27 04:42:19,654 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.ZuneVideo*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-27 04:42:21,118 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.ZuneVideo -ErrorAction SilentlyContinue
+2025-03-27 04:42:21,118 - ERROR - Error details: 
+2025-03-27 04:42:22,617 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.ZuneVideo*
+2025-03-27 04:42:22,634 - INFO - Successfully reinstalled Microsoft.ZuneVideo
+2025-03-27 04:42:22,638 - INFO - Attempting to reinstall king.com.CandyCrushSaga
+2025-03-27 04:42:24,007 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *king.com.CandyCrushSaga* | Add-AppxPackage -Register "$($_.InstallLocation)\AppXManifest.xml" -DisableDevelopmentMode -ErrorAction SilentlyContinue
+2025-03-27 04:42:25,826 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*king.com.CandyCrushSaga*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-27 04:42:27,280 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage king.com.CandyCrushSaga -ErrorAction SilentlyContinue
+2025-03-27 04:42:27,280 - ERROR - Error details: 
+2025-03-27 04:42:28,602 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *king.com.CandyCrushSaga*
+2025-03-27 04:42:28,623 - WARNING - Failed to reinstall king.com.CandyCrushSaga
+2025-03-27 04:42:30,206 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage king.com.CandyCrushSaga
+2025-03-27 04:42:30,206 - ERROR - Error details: Add-AppxPackage : Deployment failed with HRESULT: 0x80073CF9, Install failed. Please contact your software vendor. 
+(Exception from HRESULT: 0x80073CF9)
+NOTE: For additional information, look for [ActivityId] cd6c6327-9ecb-0001-3216-6ecdcb9edb01 in the Event Log or use 
+the command line Get-AppPackageLog -ActivityID cd6c6327-9ecb-0001-3216-6ecdcb9edb01
+At line:1 char:1
++ Add-AppxPackage -RegisterByFamilyName -MainPackage king.com.CandyCrus ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (king.com.CandyCrushSaga:String) [Add-AppxPackage], IOException
+    + FullyQualifiedErrorId : DeploymentError,Microsoft.Windows.Appx.PackageManager.Commands.AddAppxPackageCommand
+ 
+
+2025-03-27 04:42:30,272 - INFO - Attempting to reinstall Microsoft.Office.OneNote
+2025-03-27 04:42:31,660 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.Office.OneNote* | Add-AppxPackage -Register "$($_.InstallLocation)\AppXManifest.xml" -DisableDevelopmentMode -ErrorAction SilentlyContinue
+2025-03-27 04:42:31,660 - ERROR - Error details: 
+2025-03-27 04:42:33,647 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.Office.OneNote*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-27 04:42:35,099 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.Office.OneNote -ErrorAction SilentlyContinue
+2025-03-27 04:42:35,099 - ERROR - Error details: 
+2025-03-27 04:42:36,608 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Office.OneNote*
+2025-03-27 04:42:36,624 - INFO - Successfully reinstalled Microsoft.Office.OneNote
+2025-03-27 04:42:36,629 - INFO - Attempting to reinstall Microsoft.MicrosoftOfficeHub
+2025-03-27 04:42:38,041 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.MicrosoftOfficeHub* | Add-AppxPackage -Register "$($_.InstallLocation)\AppXManifest.xml" -DisableDevelopmentMode -ErrorAction SilentlyContinue
+2025-03-27 04:42:38,041 - ERROR - Error details: 
+2025-03-27 04:42:40,037 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.MicrosoftOfficeHub*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-27 04:42:41,518 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.MicrosoftOfficeHub -ErrorAction SilentlyContinue
+2025-03-27 04:42:41,518 - ERROR - Error details: 
+2025-03-27 04:42:43,060 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.MicrosoftOfficeHub*
+2025-03-27 04:42:43,075 - INFO - Successfully reinstalled Microsoft.MicrosoftOfficeHub
+2025-03-27 04:42:43,079 - INFO - Attempting to reinstall Microsoft.MicrosoftStickyNotes
+2025-03-27 04:42:44,465 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.MicrosoftStickyNotes* | Add-AppxPackage -Register "$($_.InstallLocation)\AppXManifest.xml" -DisableDevelopmentMode -ErrorAction SilentlyContinue
+2025-03-27 04:42:44,465 - ERROR - Error details: 
+2025-03-27 04:42:46,468 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.MicrosoftStickyNotes*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-27 04:42:47,934 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.MicrosoftStickyNotes -ErrorAction SilentlyContinue
+2025-03-27 04:42:47,934 - ERROR - Error details: 
+2025-03-27 04:42:49,467 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.MicrosoftStickyNotes*
+2025-03-27 04:42:49,488 - INFO - Successfully reinstalled Microsoft.MicrosoftStickyNotes
+2025-03-27 04:42:49,491 - INFO - Attempting to reinstall Microsoft.WindowsAlarms
+2025-03-27 04:42:50,881 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.WindowsAlarms* | Add-AppxPackage -Register "$($_.InstallLocation)\AppXManifest.xml" -DisableDevelopmentMode -ErrorAction SilentlyContinue
+2025-03-27 04:42:50,881 - ERROR - Error details: 
+2025-03-27 04:42:52,886 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.WindowsAlarms*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-27 04:42:54,368 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.WindowsAlarms -ErrorAction SilentlyContinue
+2025-03-27 04:42:54,368 - ERROR - Error details: 
+2025-03-27 04:42:55,914 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsAlarms*
+2025-03-27 04:42:55,974 - INFO - Successfully reinstalled Microsoft.WindowsAlarms
+2025-03-27 04:42:55,978 - INFO - Attempting to reinstall Microsoft.WindowsCamera
+2025-03-27 04:42:57,366 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.WindowsCamera* | Add-AppxPackage -Register "$($_.InstallLocation)\AppXManifest.xml" -DisableDevelopmentMode -ErrorAction SilentlyContinue
+2025-03-27 04:42:57,366 - ERROR - Error details: 
+2025-03-27 04:42:59,365 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.WindowsCamera*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-27 04:43:00,856 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.WindowsCamera -ErrorAction SilentlyContinue
+2025-03-27 04:43:00,856 - ERROR - Error details: 
+2025-03-27 04:43:02,396 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsCamera*
+2025-03-27 04:43:02,431 - INFO - Successfully reinstalled Microsoft.WindowsCamera
+2025-03-27 04:43:02,434 - INFO - Attempting to reinstall Microsoft.WindowsFeedbackHub
+2025-03-27 04:43:03,802 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.WindowsFeedbackHub* | Add-AppxPackage -Register "$($_.InstallLocation)\AppXManifest.xml" -DisableDevelopmentMode -ErrorAction SilentlyContinue
+2025-03-27 04:43:03,802 - ERROR - Error details: 
+2025-03-27 04:43:05,797 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.WindowsFeedbackHub*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-27 04:43:07,269 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.WindowsFeedbackHub -ErrorAction SilentlyContinue
+2025-03-27 04:43:07,269 - ERROR - Error details: 
+2025-03-27 04:43:08,837 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsFeedbackHub*
+2025-03-27 04:43:08,900 - INFO - Successfully reinstalled Microsoft.WindowsFeedbackHub
+2025-03-27 04:43:08,903 - INFO - Attempting to reinstall Microsoft.WindowsMaps
+2025-03-27 04:43:10,296 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.WindowsMaps* | Add-AppxPackage -Register "$($_.InstallLocation)\AppXManifest.xml" -DisableDevelopmentMode -ErrorAction SilentlyContinue
+2025-03-27 04:43:10,296 - ERROR - Error details: 
+2025-03-27 04:43:12,279 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.WindowsMaps*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-27 04:43:13,761 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.WindowsMaps -ErrorAction SilentlyContinue
+2025-03-27 04:43:13,761 - ERROR - Error details: 
+2025-03-27 04:43:15,333 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsMaps*
+2025-03-27 04:43:15,341 - INFO - Successfully reinstalled Microsoft.WindowsMaps
+2025-03-27 04:43:15,344 - INFO - Attempting to reinstall Microsoft.WindowsSoundRecorder
+2025-03-27 04:43:16,740 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.WindowsSoundRecorder* | Add-AppxPackage -Register "$($_.InstallLocation)\AppXManifest.xml" -DisableDevelopmentMode -ErrorAction SilentlyContinue
+2025-03-27 04:43:16,740 - ERROR - Error details: 
+2025-03-27 04:43:18,728 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.WindowsSoundRecorder*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-27 04:43:20,203 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.WindowsSoundRecorder -ErrorAction SilentlyContinue
+2025-03-27 04:43:20,203 - ERROR - Error details: 
+2025-03-27 04:43:21,713 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsSoundRecorder*
+2025-03-27 04:43:21,732 - INFO - Successfully reinstalled Microsoft.WindowsSoundRecorder
+2025-03-27 04:43:21,736 - INFO - Attempting to reinstall Microsoft.GetHelp
+2025-03-27 04:43:23,125 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.GetHelp* | Add-AppxPackage -Register "$($_.InstallLocation)\AppXManifest.xml" -DisableDevelopmentMode -ErrorAction SilentlyContinue
+2025-03-27 04:43:23,125 - ERROR - Error details: 
+2025-03-27 04:43:25,153 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.GetHelp*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-27 04:43:26,618 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.GetHelp -ErrorAction SilentlyContinue
+2025-03-27 04:43:26,618 - ERROR - Error details: 
+2025-03-27 04:43:28,165 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.GetHelp*
+2025-03-27 04:43:28,190 - INFO - Successfully reinstalled Microsoft.GetHelp
+2025-03-27 04:43:28,193 - INFO - Attempting to reinstall Microsoft.Getstarted
+2025-03-27 04:43:29,610 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.Getstarted* | Add-AppxPackage -Register "$($_.InstallLocation)\AppXManifest.xml" -DisableDevelopmentMode -ErrorAction SilentlyContinue
+2025-03-27 04:43:29,611 - ERROR - Error details: 
+2025-03-27 04:43:31,610 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.Getstarted*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-27 04:43:33,078 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.Getstarted -ErrorAction SilentlyContinue
+2025-03-27 04:43:33,078 - ERROR - Error details: 
+2025-03-27 04:43:34,633 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Getstarted*
+2025-03-27 04:43:34,640 - INFO - Successfully reinstalled Microsoft.Getstarted
+2025-03-27 04:43:34,644 - INFO - Attempting to reinstall Microsoft.Microsoft3DViewer
+2025-03-27 04:43:36,048 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.Microsoft3DViewer* | Add-AppxPackage -Register "$($_.InstallLocation)\AppXManifest.xml" -DisableDevelopmentMode -ErrorAction SilentlyContinue
+2025-03-27 04:43:36,049 - ERROR - Error details: 
+2025-03-27 04:43:38,061 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.Microsoft3DViewer*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-27 04:43:39,533 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.Microsoft3DViewer -ErrorAction SilentlyContinue
+2025-03-27 04:43:39,533 - ERROR - Error details: 
+2025-03-27 04:43:41,060 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Microsoft3DViewer*
+2025-03-27 04:43:41,111 - INFO - Successfully reinstalled Microsoft.Microsoft3DViewer
+2025-03-27 04:43:41,115 - INFO - Attempting to reinstall Microsoft.Paint3D
+2025-03-27 04:43:42,486 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Paint3D* | Add-AppxPackage -Register "$($_.InstallLocation)\AppXManifest.xml" -DisableDevelopmentMode -ErrorAction SilentlyContinue
+2025-03-27 04:43:44,296 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.Paint3D*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-27 04:43:45,761 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.Paint3D -ErrorAction SilentlyContinue
+2025-03-27 04:43:45,761 - ERROR - Error details: 
+2025-03-27 04:43:47,097 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Paint3D*
+2025-03-27 04:43:47,113 - WARNING - Failed to reinstall Microsoft.Paint3D
+2025-03-27 04:43:48,714 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.Paint3D
+2025-03-27 04:43:48,714 - ERROR - Error details: Add-AppxPackage : Deployment failed with HRESULT: 0x80073CF9, Install failed. Please contact your software vendor. 
+(Exception from HRESULT: 0x80073CF9)
+NOTE: For additional information, look for [ActivityId] cd6c6327-9ecb-0001-5265-6ecdcb9edb01 in the Event Log or use 
+the command line Get-AppPackageLog -ActivityID cd6c6327-9ecb-0001-5265-6ecdcb9edb01
+At line:1 char:1
++ Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.Paint3D
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (Microsoft.Paint3D:String) [Add-AppxPackage], IOException
+    + FullyQualifiedErrorId : DeploymentError,Microsoft.Windows.Appx.PackageManager.Commands.AddAppxPackageCommand
+ 
+
+2025-03-27 04:43:48,758 - INFO - Attempting to reinstall Microsoft.StorePurchaseApp
+2025-03-27 04:43:50,164 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.StorePurchaseApp* | Add-AppxPackage -Register "$($_.InstallLocation)\AppXManifest.xml" -DisableDevelopmentMode -ErrorAction SilentlyContinue
+2025-03-27 04:43:50,164 - ERROR - Error details: 
+2025-03-27 04:43:52,201 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.StorePurchaseApp*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-27 04:43:53,685 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.StorePurchaseApp -ErrorAction SilentlyContinue
+2025-03-27 04:43:53,685 - ERROR - Error details: 
+2025-03-27 04:43:55,215 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.StorePurchaseApp*
+2025-03-27 04:43:55,231 - INFO - Successfully reinstalled Microsoft.StorePurchaseApp
+2025-03-27 04:43:55,234 - INFO - Attempting to reinstall Microsoft.SkypeApp
+2025-03-27 04:43:56,632 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.SkypeApp* | Add-AppxPackage -Register "$($_.InstallLocation)\AppXManifest.xml" -DisableDevelopmentMode -ErrorAction SilentlyContinue
+2025-03-27 04:43:56,632 - ERROR - Error details: 
+2025-03-27 04:43:58,647 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.SkypeApp*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-27 04:44:00,148 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.SkypeApp -ErrorAction SilentlyContinue
+2025-03-27 04:44:00,148 - ERROR - Error details: 
+2025-03-27 04:44:01,668 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.SkypeApp*
+2025-03-27 04:44:01,676 - INFO - Successfully reinstalled Microsoft.SkypeApp
+2025-03-27 04:44:01,679 - INFO - Attempting to reinstall Microsoft.YourPhone
+2025-03-27 04:44:03,073 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.YourPhone* | Add-AppxPackage -Register "$($_.InstallLocation)\AppXManifest.xml" -DisableDevelopmentMode -ErrorAction SilentlyContinue
+2025-03-27 04:44:03,073 - ERROR - Error details: 
+2025-03-27 04:44:05,179 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.YourPhone*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-27 04:44:06,717 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.YourPhone -ErrorAction SilentlyContinue
+2025-03-27 04:44:06,717 - ERROR - Error details: 
+2025-03-27 04:44:08,305 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.YourPhone*
+2025-03-27 04:44:08,320 - INFO - Successfully reinstalled Microsoft.YourPhone
+2025-03-27 04:44:08,324 - INFO - Attempting to reinstall microsoft.windowscommunicationsapps
+2025-03-27 04:44:09,890 - ERROR - Error running command: Get-AppxPackage -AllUsers *microsoft.windowscommunicationsapps* | Add-AppxPackage -Register "$($_.InstallLocation)\AppXManifest.xml" -DisableDevelopmentMode -ErrorAction SilentlyContinue
+2025-03-27 04:44:09,890 - ERROR - Error details: 
+2025-03-27 04:44:12,063 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*microsoft.windowscommunicationsapps*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-27 04:44:13,667 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage microsoft.windowscommunicationsapps -ErrorAction SilentlyContinue
+2025-03-27 04:44:13,667 - ERROR - Error details: 
+2025-03-27 04:44:15,245 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *microsoft.windowscommunicationsapps*
+2025-03-27 04:44:15,254 - INFO - Successfully reinstalled microsoft.windowscommunicationsapps
+2025-03-27 04:44:15,258 - INFO - Attempting to reinstall Microsoft.People
+2025-03-27 04:44:16,679 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.People* | Add-AppxPackage -Register "$($_.InstallLocation)\AppXManifest.xml" -DisableDevelopmentMode -ErrorAction SilentlyContinue
+2025-03-27 04:44:16,680 - ERROR - Error details: 
+2025-03-27 04:44:18,860 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.People*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-27 04:44:20,477 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.People -ErrorAction SilentlyContinue
+2025-03-27 04:44:20,477 - ERROR - Error details: 
+2025-03-27 04:44:22,108 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.People*
+2025-03-27 04:44:22,128 - INFO - Successfully reinstalled Microsoft.People
+2025-03-27 04:44:22,132 - INFO - Attempting to reinstall Microsoft.BingWeather
+2025-03-27 04:44:23,560 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.BingWeather* | Add-AppxPackage -Register "$($_.InstallLocation)\AppXManifest.xml" -DisableDevelopmentMode -ErrorAction SilentlyContinue
+2025-03-27 04:44:23,560 - ERROR - Error details: 
+2025-03-27 04:44:25,707 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.BingWeather*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-27 04:44:27,219 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.BingWeather -ErrorAction SilentlyContinue
+2025-03-27 04:44:27,219 - ERROR - Error details: 
+2025-03-27 04:44:28,758 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.BingWeather*
+2025-03-27 04:44:28,777 - INFO - Successfully reinstalled Microsoft.BingWeather
+2025-03-27 04:44:28,781 - INFO - Attempting to reinstall Microsoft.Windows.Photos
+2025-03-27 04:44:30,189 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.Windows.Photos* | Add-AppxPackage -Register "$($_.InstallLocation)\AppXManifest.xml" -DisableDevelopmentMode -ErrorAction SilentlyContinue
+2025-03-27 04:44:30,190 - ERROR - Error details: 
+2025-03-27 04:44:32,254 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.Windows.Photos*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-27 04:44:33,758 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.Windows.Photos -ErrorAction SilentlyContinue
+2025-03-27 04:44:33,758 - ERROR - Error details: 
+2025-03-27 04:44:35,332 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Windows.Photos*
+2025-03-27 04:44:35,337 - INFO - Successfully reinstalled Microsoft.Windows.Photos
+2025-03-27 04:44:35,343 - INFO - Reinstallation complete. Successfully reinstalled 23 apps. Failed to reinstall 2 apps. Some apps may need to be manually reinstalled from the Microsoft Store.
+2025-03-27 04:44:37,631 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.XboxApp*
+2025-03-27 04:44:39,148 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Xbox.TCUI*
+2025-03-27 04:44:40,606 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.XboxGameOverlay*
+2025-03-27 04:44:42,045 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.XboxGamingOverlay*
+2025-03-27 04:44:43,518 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.XboxIdentityProvider*
+2025-03-27 04:44:44,995 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.XboxSpeechToTextOverlay*
+2025-03-27 04:44:46,474 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.MicrosoftSolitaireCollection*
+2025-03-27 04:44:47,976 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.ZuneMusic*
+2025-03-27 04:44:49,477 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.ZuneVideo*
+2025-03-27 04:44:50,844 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *king.com.CandyCrushSaga*
+2025-03-27 04:44:52,393 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Office.OneNote*
+2025-03-27 04:44:53,850 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.MicrosoftOfficeHub*
+2025-03-27 04:44:55,342 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.MicrosoftStickyNotes*
+2025-03-27 04:44:56,834 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsAlarms*
+2025-03-27 04:44:58,308 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsCamera*
+2025-03-27 04:44:59,788 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsFeedbackHub*
+2025-03-27 04:45:01,260 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsMaps*
+2025-03-27 04:45:02,724 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsSoundRecorder*
+2025-03-27 04:45:04,212 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.GetHelp*
+2025-03-27 04:45:05,714 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Getstarted*
+2025-03-27 04:45:07,178 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Microsoft3DViewer*
+2025-03-27 04:45:08,555 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Paint3D*
+2025-03-27 04:45:10,083 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.StorePurchaseApp*
+2025-03-27 04:45:11,527 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.SkypeApp*
+2025-03-27 04:45:12,971 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.YourPhone*
+2025-03-27 04:45:14,419 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *microsoft.windowscommunicationsapps*
+2025-03-27 04:45:15,891 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.People*
+2025-03-27 04:45:17,349 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.BingWeather*
+2025-03-27 04:45:18,834 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Windows.Photos*
+2025-03-27 04:45:31,170 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.XboxApp*
+2025-03-27 04:45:32,654 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Xbox.TCUI*
+2025-03-27 04:45:34,105 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.XboxGameOverlay*
+2025-03-27 04:45:35,599 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.XboxGamingOverlay*
+2025-03-27 04:45:37,298 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.XboxIdentityProvider*
+2025-03-27 04:45:38,820 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.XboxSpeechToTextOverlay*
+2025-03-27 04:45:40,296 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.MicrosoftSolitaireCollection*
+2025-03-27 04:45:41,763 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.ZuneMusic*
+2025-03-27 04:45:43,227 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.ZuneVideo*
+2025-03-27 04:45:44,592 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *king.com.CandyCrushSaga*
+2025-03-27 04:45:46,106 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Office.OneNote*
+2025-03-27 04:45:47,542 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.MicrosoftOfficeHub*
+2025-03-27 04:45:49,004 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.MicrosoftStickyNotes*
+2025-03-27 04:45:50,461 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsAlarms*
+2025-03-27 04:45:51,938 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsCamera*
+2025-03-27 04:45:53,563 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsFeedbackHub*
+2025-03-27 04:45:55,059 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsMaps*
+2025-03-27 04:45:56,628 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsSoundRecorder*
+2025-03-27 04:45:58,107 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.GetHelp*
+2025-03-27 04:45:59,606 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Getstarted*
+2025-03-27 04:46:01,091 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Microsoft3DViewer*
+2025-03-27 04:46:02,451 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Paint3D*
+2025-03-27 04:46:04,031 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.StorePurchaseApp*
+2025-03-27 04:46:05,893 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.SkypeApp*
+2025-03-27 04:46:07,533 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.YourPhone*
+2025-03-27 04:46:09,404 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *microsoft.windowscommunicationsapps*
+2025-03-27 04:46:11,236 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.People*
+2025-03-27 04:46:13,055 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.BingWeather*
+2025-03-27 04:46:14,713 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Windows.Photos*
+2025-03-27 04:47:07,414 - INFO - Starting reinstallation of selected apps: Microsoft.SkypeApp
+2025-03-27 04:47:07,418 - INFO - Creating system restore point
+2025-03-27 04:47:08,623 - INFO - Successfully ran command: Get-ComputerRestorePoint
+2025-03-27 04:47:11,033 - ERROR - Error running command: Checkpoint-Computer -Description "Gaming Bloatware Remover - 2025-03-27_04-47-07" -RestorePointType "APPLICATION_UNINSTALL"
+2025-03-27 04:47:11,033 - ERROR - Error details: Checkpoint-Computer : This command cannot be run due to the following error: the service cannot be started because it 
+is disabled or does not have enabled devices associated with it.
+At line:1 char:1
++ Checkpoint-Computer -Description "Gaming Bloatware Remover - 2025-03- ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Checkpoint-Computer], ArgumentException
+    + FullyQualifiedErrorId : ServiceDisabled,Microsoft.PowerShell.Commands.CheckpointComputerCommand
+ 
+
+2025-03-27 04:47:11,063 - WARNING - Could not create system restore point: Checkpoint-Computer : This command cannot be run due to the following error: the service cannot be started because it 
+is disabled or does not have enabled devices associated with it.
+At line:1 char:1
++ Checkpoint-Computer -Description "Gaming Bloatware Remover - 2025-03- ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Checkpoint-Computer], ArgumentException
+    + FullyQualifiedErrorId : ServiceDisabled,Microsoft.PowerShell.Commands.CheckpointComputerCommand
+ 
+
+2025-03-27 04:47:11,066 - INFO - Attempting to reinstall Microsoft.SkypeApp
+2025-03-27 04:47:12,501 - ERROR - Error running command: Get-AppxPackage -AllUsers *Microsoft.SkypeApp* | Add-AppxPackage -Register "$($_.InstallLocation)\AppXManifest.xml" -DisableDevelopmentMode -ErrorAction SilentlyContinue
+2025-03-27 04:47:12,501 - ERROR - Error details: 
+2025-03-27 04:47:14,446 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.SkypeApp*'} | ForEach-Object {Add-AppxProvisionedPackage -Online -PackagePath $_.PackagePath -SkipLicense -ErrorAction SilentlyContinue}
+2025-03-27 04:47:15,918 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.SkypeApp -ErrorAction SilentlyContinue
+2025-03-27 04:47:15,918 - ERROR - Error details: 
+2025-03-27 04:47:17,376 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.SkypeApp*
+2025-03-27 04:47:17,406 - INFO - Successfully reinstalled Microsoft.SkypeApp
+2025-03-27 04:47:17,410 - INFO - Reinstallation complete. Successfully reinstalled 1 apps.
+2025-03-27 04:47:19,650 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.XboxApp*
+2025-03-27 04:47:21,249 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Xbox.TCUI*
+2025-03-27 04:47:22,668 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.XboxGameOverlay*
+2025-03-27 04:47:24,137 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.XboxGamingOverlay*
+2025-03-27 04:47:25,571 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.XboxIdentityProvider*
+2025-03-27 04:47:27,018 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.XboxSpeechToTextOverlay*
+2025-03-27 04:47:28,546 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.MicrosoftSolitaireCollection*
+2025-03-27 04:47:29,953 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.ZuneMusic*
+2025-03-27 04:47:31,416 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.ZuneVideo*
+2025-03-27 04:47:33,438 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *king.com.CandyCrushSaga*
+2025-03-27 04:47:35,664 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Office.OneNote*
+2025-03-27 04:47:37,472 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.MicrosoftOfficeHub*
+2025-03-27 04:47:39,086 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.MicrosoftStickyNotes*
+2025-03-27 04:47:40,828 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsAlarms*
+2025-03-27 04:47:42,492 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsCamera*
+2025-03-27 04:47:43,941 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsFeedbackHub*
+2025-03-27 04:47:45,421 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsMaps*
+2025-03-27 04:47:46,851 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsSoundRecorder*
+2025-03-27 04:47:48,296 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.GetHelp*
+2025-03-27 04:47:49,728 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Getstarted*
+2025-03-27 04:47:51,171 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Microsoft3DViewer*
+2025-03-27 04:47:52,513 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Paint3D*
+2025-03-27 04:47:54,028 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.StorePurchaseApp*
+2025-03-27 04:47:55,455 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.SkypeApp*
+2025-03-27 04:47:56,886 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.YourPhone*
+2025-03-27 04:47:58,292 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *microsoft.windowscommunicationsapps*
+2025-03-27 04:47:59,728 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.People*
+2025-03-27 04:48:01,158 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.BingWeather*
+2025-03-27 04:48:02,604 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Windows.Photos*

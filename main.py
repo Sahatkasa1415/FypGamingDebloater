@@ -2,7 +2,8 @@ import tkinter as tk
 from tkinter import ttk, messagebox
 import os
 import logging
-from gui_components import AppSelectionFrame, RestorePointFrame, CPURamMonitor
+import threading
+from gui_components import AppSelectionFrame, RestorePointFrame, CPURamMonitor, AppReinstallFrame
 from app_actions import SELECTABLE_APPS, APPS
 
 # Setup logging
@@ -45,41 +46,38 @@ class GamingDebloaterApp(tk.Tk):
         self.system_monitor = CPURamMonitor(self.sidebar_frame)
         self.system_monitor.pack(fill=tk.Y, expand=True)
         
-        # Right content area with two panels
+        # Right content area with notebook for tabs
         self.content_frame = tk.Frame(self.main_frame, bg="#e0e0e0")
         self.content_frame.pack(side=tk.RIGHT, fill=tk.BOTH, expand=True)
         
-        # Create two panels for "One Click Delete" and "Selective Removal"
-        self.left_panel = tk.Frame(
-            self.content_frame, 
-            bg="#d4d4d4", 
-            relief=tk.GROOVE, 
-            bd=1,
-            width=300,
-            height=400
-        )
-        self.left_panel.pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=(0, 10))
+        # Create notebook (tabbed interface)
+        self.notebook = ttk.Notebook(self.content_frame)
+        self.notebook.pack(fill=tk.BOTH, expand=True)
         
-        self.right_panel = tk.Frame(
-            self.content_frame, 
-            bg="#d4d4d4", 
-            relief=tk.GROOVE, 
-            bd=1,
-            width=300,
-            height=400
-        )
-        self.right_panel.pack(side=tk.RIGHT, fill=tk.BOTH, expand=True)
-        
-        # One Click Delete panel
+        # Tab 1: One Click Delete
+        self.one_click_tab = tk.Frame(self.notebook, bg="#d4d4d4")
+        self.notebook.add(self.one_click_tab, text="One Click Delete")
         self.setup_one_click_panel()
+        
+        # Tab 2: Selective Removal
+        self.removal_tab = tk.Frame(self.notebook, bg="#d4d4d4")
+        self.notebook.add(self.removal_tab, text="Selective Removal")
         
         # Selective Removal panel
         self.app_selection = AppSelectionFrame(
-            self.right_panel, 
+            self.removal_tab, 
             apps=SELECTABLE_APPS, 
             app_descriptions=APPS
         )
         self.app_selection.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
+        
+        # Tab 3: Selective Reinstall (New)
+        self.reinstall_tab = tk.Frame(self.notebook, bg="#d4d4d4")
+        self.notebook.add(self.reinstall_tab, text="Selective Reinstall")
+        
+        # Selective Reinstall panel
+        self.app_reinstall = AppReinstallFrame(self.reinstall_tab)
+        self.app_reinstall.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
         
         # Start updating system monitor
         self.update_system_info()
@@ -88,7 +86,7 @@ class GamingDebloaterApp(tk.Tk):
         """Set up the One Click Delete panel with toggle switches and restore button"""
         # Panel title
         one_click_title = tk.Label(
-            self.left_panel, 
+            self.one_click_tab, 
             text="One click Delete", 
             font=("Arial", 16),
             bg="#d4d4d4"
@@ -96,7 +94,7 @@ class GamingDebloaterApp(tk.Tk):
         one_click_title.pack(pady=10)
         
         # Toggle switches frame
-        toggle_frame = tk.Frame(self.left_panel, bg="#d4d4d4")
+        toggle_frame = tk.Frame(self.one_click_tab, bg="#d4d4d4")
         toggle_frame.pack(fill=tk.X, padx=20, pady=10)
         
         # Create toggle switches (just for show, functionality in a real app would be connected)
@@ -129,12 +127,12 @@ class GamingDebloaterApp(tk.Tk):
             toggle_bg.pack(side=tk.LEFT, padx=(10, 0))
         
         # Add spacer
-        spacer = tk.Frame(self.left_panel, height=40, bg="#d4d4d4")
+        spacer = tk.Frame(self.one_click_tab, height=40, bg="#d4d4d4")
         spacer.pack(fill=tk.X)
         
         # Delete button (one-click delete)
         delete_button = tk.Button(
-            self.left_panel,
+            self.one_click_tab,
             text="One click Delete",
             bg="#d4d4d4",
             font=("Arial", 12),
@@ -144,7 +142,7 @@ class GamingDebloaterApp(tk.Tk):
         delete_button.pack(pady=10)
         
         # Add restore point frame
-        self.restore_frame = RestorePointFrame(self.left_panel)
+        self.restore_frame = RestorePointFrame(self.one_click_tab)
         self.restore_frame.pack(fill=tk.X, pady=20)
 
     def one_click_delete(self):
