@@ -48,11 +48,13 @@ def run_powershell(cmd):
     """
     try:
         # Run PowerShell with timeout to prevent hanging
+        # Remove the "-Command" parameter to avoid visible PowerShell windows
         result = subprocess.run(
-            ["powershell", "-NoProfile", "-ExecutionPolicy", "Bypass", "-Command", cmd],
+            ["powershell", "-NoProfile", "-ExecutionPolicy", "Bypass", cmd],
             capture_output=True, 
             text=True,
-            timeout=120  # 2-minute timeout
+            timeout=120,  # 2-minute timeout
+            creationflags=subprocess.CREATE_NO_WINDOW  # This prevents window from showing
         )
         
         # Log the command for debugging (but avoid logging huge outputs)
