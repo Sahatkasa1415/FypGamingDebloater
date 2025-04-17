@@ -104,22 +104,20 @@ def get_available_apps_for_reinstall():
     try:
         # Get app list from app_actions.py
         from app_actions import APPS
+        from powershell_utils import run_batch_app_check
         
+        # Run batch check for all apps at once
+        app_names = list(APPS.keys())
+        installed_status = run_batch_app_check(app_names)
+        
+        # Format the results
         available_apps = {}
-        
-        for app_name in APPS.keys():
-            try:
-                is_installed = check_app_installed(app_name)
-                available_apps[app_name] = {
-                    "description": APPS[app_name]["description"] if "description" in APPS[app_name] else app_name,
-                    "installed": is_installed
-                }
-            except Exception as app_error:
-                logging.error(f"Error checking status for {app_name}: {str(app_error)}")
-                available_apps[app_name] = {
-                    "description": APPS[app_name]["description"] if "description" in APPS[app_name] else app_name,
-                    "installed": False
-                }
+        for app_name in app_names:
+            is_installed = installed_status.get(app_name, False)
+            available_apps[app_name] = {
+                "description": APPS[app_name]["description"] if "description" in APPS[app_name] else app_name,
+                "installed": is_installed
+            }
         
         return available_apps
     except Exception as e:

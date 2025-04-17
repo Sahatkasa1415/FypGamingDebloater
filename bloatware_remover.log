@@ -2515,3 +2515,445 @@ At line:1 char:1
 2025-04-03 05:02:07,816 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.PowerToys*...
 2025-04-03 05:02:09,023 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Copilot*...
 2025-04-03 05:02:10,144 - ERROR - Error loading available apps: main thread is not in main loop
+2025-04-03 05:10:00,143 - INFO - Application started
+2025-04-03 05:10:01,707 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.XboxApp*...
+2025-04-03 05:10:03,095 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Xbox.TCUI*...
+2025-04-03 05:10:04,453 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.XboxGameOverlay*...
+2025-04-03 05:10:06,091 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.XboxGamingOverlay*...
+2025-04-03 05:10:07,547 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.XboxIdentityProvider*...
+2025-04-03 05:10:09,107 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.XboxSpeechToTextOverlay*...
+2025-04-03 05:10:10,779 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.MicrosoftSolitaireCollection*...
+2025-04-03 05:10:12,968 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.ZuneMusic*...
+2025-04-03 05:10:14,356 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.ZuneVideo*...
+2025-04-03 05:10:15,655 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *king.com.CandyCrushSaga*...
+2025-04-03 05:10:17,160 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Office.OneNote*...
+2025-04-03 05:10:18,526 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.MicrosoftOfficeHub*...
+2025-04-03 05:10:19,845 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.MicrosoftStickyNotes*...
+2025-04-03 05:10:21,166 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsAlarms*...
+2025-04-03 05:10:22,475 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsCamera*...
+2025-04-03 05:10:23,780 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsFeedbackHub*...
+2025-04-03 05:10:25,079 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsMaps*...
+2025-04-03 05:10:26,394 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsSoundRecorder*...
+2025-04-03 05:10:27,696 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.GetHelp*...
+2025-04-03 05:10:29,009 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Getstarted*...
+2025-04-03 05:10:30,287 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Microsoft3DViewer*...
+2025-04-03 05:10:31,475 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Paint3D*...
+2025-04-03 05:10:32,836 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.StorePurchaseApp*...
+2025-04-03 05:10:34,115 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.SkypeApp*...
+2025-04-03 05:10:35,413 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.YourPhone*...
+2025-04-03 05:10:36,730 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *microsoft.windowscommunicationsapps*...
+2025-04-03 05:10:38,082 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.People*...
+2025-04-03 05:10:39,365 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.BingWeather*...
+2025-04-03 05:10:40,663 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Windows.Photos*...
+2025-04-03 05:10:41,888 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsTerminal*...
+2025-04-03 05:10:43,079 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.PowerToys*...
+2025-04-03 05:10:44,264 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Copilot*...
+2025-04-03 05:22:15,483 - INFO - Application started
+2025-04-03 05:22:17,510 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.XboxApp*
+2025-04-03 05:22:18,890 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Xbox.TCUI*
+2025-04-03 05:22:20,241 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.XboxGameOverlay*
+2025-04-03 05:22:21,640 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.XboxGamingOverlay*
+2025-04-03 05:22:22,973 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.XboxIdentityProvider*
+2025-04-03 05:22:24,417 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.XboxSpeechToTextOverlay*
+2025-04-03 05:22:25,770 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.MicrosoftSolitaireCollection*
+2025-04-03 05:22:27,137 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.ZuneMusic*
+2025-04-03 05:22:28,562 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.ZuneVideo*
+2025-04-03 05:22:29,954 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *king.com.CandyCrushSaga*
+2025-04-03 05:22:31,366 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Office.OneNote*
+2025-04-03 05:22:32,683 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.MicrosoftOfficeHub*
+2025-04-03 05:22:34,076 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.MicrosoftStickyNotes*
+2025-04-03 05:22:35,400 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsAlarms*
+2025-04-03 05:22:36,772 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsCamera*
+2025-04-03 05:22:38,173 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsFeedbackHub*
+2025-04-03 05:22:39,490 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsMaps*
+2025-04-03 05:22:40,820 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsSoundRecorder*
+2025-04-03 05:22:42,179 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.GetHelp*
+2025-04-03 05:22:43,542 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Getstarted*
+2025-04-03 05:22:44,853 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Microsoft3DViewer*
+2025-04-03 05:22:46,077 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Paint3D*
+2025-04-03 05:22:47,457 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.StorePurchaseApp*
+2025-04-03 05:22:48,809 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.SkypeApp*
+2025-04-03 05:22:50,166 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.YourPhone*
+2025-04-03 05:22:51,754 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *microsoft.windowscommunicationsapps*
+2025-04-03 05:22:53,222 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.People*
+2025-04-03 05:22:54,613 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.BingWeather*
+2025-04-03 05:22:56,096 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Windows.Photos*
+2025-04-03 05:22:57,447 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsTerminal*
+2025-04-03 05:22:58,756 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.PowerToys*
+2025-04-03 05:23:00,081 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Copilot*
+2025-04-03 05:26:58,035 - INFO - Application started
+2025-04-03 05:27:02,106 - INFO - Successfully ran command: Write-Output 'Microsoft.XboxApp---START---';if (Get-AppxPackage -AllUsers *Microsoft.XboxApp*) { Wri...
+2025-04-03 05:28:18,682 - INFO - Creating system restore point
+2025-04-03 05:28:20,109 - ERROR - Error running command: Get-Service -Name SRSERVICE | Select-Object -ExpandProperty Status
+2025-04-03 05:28:20,109 - ERROR - Error details: Get-Service : Cannot find any service with service name 'SRSERVICE'.
+At line:1 char:1
++ Get-Service -Name SRSERVICE | Select-Object -ExpandProperty Status
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (SRSERVICE:String) [Get-Service], ServiceCommandException
+    + FullyQualifiedErrorId : NoServiceFoundForGivenName,Microsoft.PowerShell.Commands.GetServiceCommand
+2025-04-03 05:28:21,526 - ERROR - Error running command: Set-Service -Name SRSERVICE -StartupType Manual; Start-Service -Name SRSERVICE -ErrorAction Silently...
+2025-04-03 05:28:21,527 - ERROR - Error details: Set-Service : Service SRSERVICE was not found on computer '.'.
+At line:1 char:1
++ Set-Service -Name SRSERVICE -StartupType Manual; Start-Service -Name  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (.:String) [Set-Service], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.SetServiceCommand
+2025-04-03 05:28:24,584 - INFO - Successfully ran command: Enable-ComputerRestore -Drive "C:\" -ErrorAction SilentlyContinue
+2025-04-03 05:28:25,644 - INFO - Successfully ran command: Checkpoint-Computer -Description "Gaming Bloatware Remover - 2025-04-03_05-28-18" -RestorePointType ...
+2025-04-03 05:28:25,646 - INFO - System restore point created successfully
+2025-04-03 05:28:25,648 - INFO - Starting reinstallation of selected apps: king.com.CandyCrushSaga, Microsoft.Office.OneNote, Microsoft.MicrosoftStickyNotes, Microsoft.WindowsAlarms, Microsoft.Paint3D, Microsoft.SkypeApp, microsoft.windowscommunicationsapps, Microsoft.BingWeather
+2025-04-03 05:28:25,650 - INFO - Creating system restore point
+2025-04-03 05:28:26,956 - ERROR - Error running command: Get-Service -Name SRSERVICE | Select-Object -ExpandProperty Status
+2025-04-03 05:28:26,956 - ERROR - Error details: Get-Service : Cannot find any service with service name 'SRSERVICE'.
+At line:1 char:1
++ Get-Service -Name SRSERVICE | Select-Object -ExpandProperty Status
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (SRSERVICE:String) [Get-Service], ServiceCommandException
+    + FullyQualifiedErrorId : NoServiceFoundForGivenName,Microsoft.PowerShell.Commands.GetServiceCommand
+2025-04-03 05:28:28,252 - ERROR - Error running command: Set-Service -Name SRSERVICE -StartupType Manual; Start-Service -Name SRSERVICE -ErrorAction Silently...
+2025-04-03 05:28:28,252 - ERROR - Error details: Set-Service : Service SRSERVICE was not found on computer '.'.
+At line:1 char:1
++ Set-Service -Name SRSERVICE -StartupType Manual; Start-Service -Name  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (.:String) [Set-Service], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.SetServiceCommand
+2025-04-03 05:28:31,262 - INFO - Successfully ran command: Enable-ComputerRestore -Drive "C:\" -ErrorAction SilentlyContinue
+2025-04-03 05:28:32,256 - INFO - Successfully ran command: Checkpoint-Computer -Description "Gaming Bloatware Remover - 2025-04-03_05-28-25" -RestorePointType ...
+2025-04-03 05:28:32,259 - INFO - System restore point created successfully
+2025-04-03 05:28:32,260 - INFO - Attempting to reinstall king.com.CandyCrushSaga
+2025-04-03 05:28:33,545 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *king.com.CandyCrushSaga*
+2025-04-03 05:28:34,742 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *king.com.CandyCrushSaga* | ForEach-Object {Add-AppxPackage -DisableDevelo...
+2025-04-03 05:28:36,545 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*king.com.CandyCrushSaga*'}...
+2025-04-03 05:28:37,939 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage king.com.CandyCrushSaga -ErrorAction SilentlyCont...
+2025-04-03 05:28:37,939 - ERROR - Error details: Unknown error (return code 1)
+2025-04-03 05:28:39,184 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *king.com.CandyCrushSaga*
+2025-04-03 05:28:40,671 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage king.com.CandyCrushSaga
+2025-04-03 05:28:40,671 - ERROR - Error details: Add-AppxPackage : Deployment failed with HRESULT: 0x80073CF9, Install failed. Please contact your software vendor. 
+(Exception from HRESULT: 0x80073CF9)
+Deployment operation failed.
+NOTE: For additional information, look for [ActivityId] feb31ab5-a449-0000-88e9-b5fe49a4db01 in the Event Log or use 
+the command line Get-AppPackageLog -ActivityID feb31ab5-a449-0000-88e9-b5fe49a4db01
+At line:1 char:1
++ Add-AppxPackage -RegisterByFamilyName -MainPackage king.com.CandyCrus ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (king.com.CandyCrushSaga:String) [Add-AppxPackage], IOException
+    + FullyQualifiedErrorId : DeploymentError,Microsoft.Windows.Appx.PackageManager.Commands.AddAppxPackageCommand
+2025-04-03 05:28:41,983 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *king.com.CandyCrushSaga*
+2025-04-03 05:28:42,010 - WARNING - Failed to reinstall king.com.CandyCrushSaga
+2025-04-03 05:28:42,017 - INFO - Attempting to reinstall Microsoft.Office.OneNote
+2025-04-03 05:28:43,385 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Office.OneNote*
+2025-04-03 05:28:47,660 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Office.OneNote* | ForEach-Object {Add-AppxPackage -DisableDevel...
+2025-04-03 05:28:49,731 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.Office.OneNote*'...
+2025-04-03 05:28:51,210 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.Office.OneNote -ErrorAction SilentlyCon...
+2025-04-03 05:28:51,210 - ERROR - Error details: Unknown error (return code 1)
+2025-04-03 05:28:52,833 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Office.OneNote*
+2025-04-03 05:28:52,890 - INFO - Successfully reinstalled Microsoft.Office.OneNote
+2025-04-03 05:28:52,893 - INFO - Attempting to reinstall Microsoft.MicrosoftStickyNotes
+2025-04-03 05:28:54,523 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.MicrosoftStickyNotes*
+2025-04-03 05:28:57,785 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.MicrosoftStickyNotes* | ForEach-Object {Add-AppxPackage -Disabl...
+2025-04-03 05:29:00,225 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.MicrosoftStickyN...
+2025-04-03 05:29:01,604 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.MicrosoftStickyNotes -ErrorAction Silen...
+2025-04-03 05:29:01,604 - ERROR - Error details: Unknown error (return code 1)
+2025-04-03 05:29:03,285 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.MicrosoftStickyNotes*
+2025-04-03 05:29:03,329 - INFO - Successfully reinstalled Microsoft.MicrosoftStickyNotes
+2025-04-03 05:29:03,331 - INFO - Attempting to reinstall Microsoft.WindowsAlarms
+2025-04-03 05:29:05,134 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsAlarms*
+2025-04-03 05:29:07,750 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsAlarms* | ForEach-Object {Add-AppxPackage -DisableDevelo...
+2025-04-03 05:29:10,314 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.WindowsAlarms*'}...
+2025-04-03 05:29:11,865 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.WindowsAlarms -ErrorAction SilentlyCont...
+2025-04-03 05:29:11,865 - ERROR - Error details: Unknown error (return code 1)
+2025-04-03 05:29:14,319 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsAlarms*
+2025-04-03 05:29:14,322 - INFO - Successfully reinstalled Microsoft.WindowsAlarms
+2025-04-03 05:29:14,325 - INFO - Attempting to reinstall Microsoft.Paint3D
+2025-04-03 05:29:15,716 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Paint3D*
+2025-04-03 05:29:16,922 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Paint3D* | ForEach-Object {Add-AppxPackage -DisableDevelopmentM...
+2025-04-03 05:29:18,560 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.Paint3D*'} | For...
+2025-04-03 05:29:19,868 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.Paint3D -ErrorAction SilentlyContinue
+2025-04-03 05:29:19,868 - ERROR - Error details: Unknown error (return code 1)
+2025-04-03 05:29:21,061 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Paint3D*
+2025-04-03 05:29:22,516 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.Paint3D
+2025-04-03 05:29:22,516 - ERROR - Error details: Add-AppxPackage : Deployment failed with HRESULT: 0x80073CF9, Install failed. Please contact your software vendor. 
+(Exception from HRESULT: 0x80073CF9)
+The parameter is incorrect.
+NOTE: For additional information, look for [ActivityId] feb31ab5-a449-0001-389b-b5fe49a4db01 in the Event Log or use 
+the command line Get-AppPackageLog -ActivityID feb31ab5-a449-0001-389b-b5fe49a4db01
+At line:1 char:1
++ Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.Paint3D
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (Microsoft.Paint3D:String) [Add-AppxPackage], IOException
+    + FullyQualifiedErrorId : DeploymentError,Microsoft.Windows.Appx.PackageManager.Commands.AddAppxPackageCommand
+2025-04-03 05:29:23,921 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.Paint3D*
+2025-04-03 05:29:23,972 - WARNING - Failed to reinstall Microsoft.Paint3D
+2025-04-03 05:29:23,985 - INFO - Attempting to reinstall Microsoft.SkypeApp
+2025-04-03 05:29:25,688 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.SkypeApp*
+2025-04-03 05:29:28,127 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.SkypeApp* | ForEach-Object {Add-AppxPackage -DisableDevelopment...
+2025-04-03 05:29:30,658 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.SkypeApp*'} | Fo...
+2025-04-03 05:29:32,170 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.SkypeApp -ErrorAction SilentlyContinue
+2025-04-03 05:29:32,171 - ERROR - Error details: Unknown error (return code 1)
+2025-04-03 05:29:33,705 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.SkypeApp*
+2025-04-03 05:29:33,768 - INFO - Successfully reinstalled Microsoft.SkypeApp
+2025-04-03 05:29:33,779 - INFO - Attempting to reinstall microsoft.windowscommunicationsapps
+2025-04-03 05:29:35,516 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *microsoft.windowscommunicationsapps*
+2025-04-03 05:29:41,491 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *microsoft.windowscommunicationsapps* | ForEach-Object {Add-AppxPackage -D...
+2025-04-03 05:29:43,684 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*microsoft.windowscommunica...
+2025-04-03 05:29:45,004 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage microsoft.windowscommunicationsapps -ErrorAction ...
+2025-04-03 05:29:45,004 - ERROR - Error details: Unknown error (return code 1)
+2025-04-03 05:29:46,389 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *microsoft.windowscommunicationsapps*
+2025-04-03 05:29:46,393 - INFO - Successfully reinstalled microsoft.windowscommunicationsapps
+2025-04-03 05:29:46,395 - INFO - Attempting to reinstall Microsoft.BingWeather
+2025-04-03 05:29:48,040 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.BingWeather*
+2025-04-03 05:29:50,009 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.BingWeather* | ForEach-Object {Add-AppxPackage -DisableDevelopm...
+2025-04-03 05:29:52,154 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.BingWeather*'} |...
+2025-04-03 05:29:53,438 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.BingWeather -ErrorAction SilentlyContin...
+2025-04-03 05:29:53,438 - ERROR - Error details: Unknown error (return code 1)
+2025-04-03 05:29:54,820 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.BingWeather*
+2025-04-03 05:29:54,846 - INFO - Successfully reinstalled Microsoft.BingWeather
+2025-04-03 05:29:54,849 - INFO - Reinstallation complete. Successfully reinstalled 6 apps. Failed to reinstall 2 apps. Some apps may need to be manually reinstalled from the Microsoft Store.
+2025-04-03 05:30:43,663 - INFO - Successfully ran command: Write-Output 'Microsoft.XboxApp---START---';if (Get-AppxPackage -AllUsers *Microsoft.XboxApp*) { Wri...
+2025-04-03 06:57:50,155 - INFO - Application started
+2025-04-03 06:57:54,556 - INFO - Successfully ran command: Write-Output 'Microsoft.XboxApp---START---';if (Get-AppxPackage -AllUsers *Microsoft.XboxApp*) { Wri...
+2025-04-03 06:58:54,077 - INFO - Successfully ran command: Write-Output 'Microsoft.XboxApp---START---';if (Get-AppxPackage -AllUsers *Microsoft.XboxApp*) { Wri...
+2025-04-03 07:04:13,570 - INFO - Application started
+2025-04-03 07:04:17,341 - INFO - Successfully ran command: Write-Output 'Microsoft.XboxApp---START---';if (Get-AppxPackage -AllUsers *Microsoft.XboxApp*) { Wri...
+2025-04-03 07:04:44,440 - INFO - Creating system restore point
+2025-04-03 07:04:46,371 - ERROR - Error running command: Get-Service -Name SRSERVICE | Select-Object -ExpandProperty Status
+2025-04-03 07:04:46,371 - ERROR - Error details: Get-Service : Cannot find any service with service name 'SRSERVICE'.
+At line:1 char:1
++ Get-Service -Name SRSERVICE | Select-Object -ExpandProperty Status
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (SRSERVICE:String) [Get-Service], ServiceCommandException
+    + FullyQualifiedErrorId : NoServiceFoundForGivenName,Microsoft.PowerShell.Commands.GetServiceCommand
+2025-04-03 07:04:47,765 - ERROR - Error running command: Set-Service -Name SRSERVICE -StartupType Manual; Start-Service -Name SRSERVICE -ErrorAction Silently...
+2025-04-03 07:04:47,765 - ERROR - Error details: Set-Service : Service SRSERVICE was not found on computer '.'.
+At line:1 char:1
++ Set-Service -Name SRSERVICE -StartupType Manual; Start-Service -Name  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (.:String) [Set-Service], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.SetServiceCommand
+2025-04-03 07:04:50,860 - INFO - Successfully ran command: Enable-ComputerRestore -Drive "C:\" -ErrorAction SilentlyContinue
+2025-04-03 07:04:51,961 - INFO - Successfully ran command: Checkpoint-Computer -Description "Gaming Bloatware Remover - 2025-04-03_07-04-44" -RestorePointType ...
+2025-04-03 07:04:51,998 - INFO - System restore point created successfully
+2025-04-03 07:04:52,000 - INFO - Starting removal of selected apps: Microsoft.SkypeApp
+2025-04-03 07:04:52,000 - INFO - Attempting to remove Microsoft.SkypeApp
+2025-04-03 07:04:54,025 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.SkypeApp* | Remove-AppxPackage
+2025-04-03 07:04:54,026 - INFO - Successfully removed app Microsoft.SkypeApp
+2025-04-03 07:04:55,169 - INFO - Successfully ran command: if (Test-Path 'Registry::HKEY_CLASSES_ROOT\Extensions\ContractId\Windows.Launch\PackageId\Microsoft....
+2025-04-03 07:04:56,238 - INFO - Successfully ran command: if (Test-Path 'Registry::HKEY_CLASSES_ROOT\Extensions\ContractId\Windows.Protocol\PackageId\Microsof...
+2025-04-03 07:04:56,238 - INFO - Successfully removed all registry keys for Microsoft.SkypeApp
+2025-04-03 07:04:56,291 - INFO - Removal complete. Successfully removed 1 apps.
+2025-04-03 07:05:07,901 - INFO - Successfully ran command: Write-Output 'Microsoft.XboxApp---START---';if (Get-AppxPackage -AllUsers *Microsoft.XboxApp*) { Wri...
+2025-04-03 07:05:13,536 - INFO - Successfully ran command: Write-Output 'Microsoft.XboxApp---START---';if (Get-AppxPackage -AllUsers *Microsoft.XboxApp*) { Wri...
+2025-04-03 07:05:26,177 - INFO - Creating system restore point
+2025-04-03 07:05:27,514 - ERROR - Error running command: Get-Service -Name SRSERVICE | Select-Object -ExpandProperty Status
+2025-04-03 07:05:27,515 - ERROR - Error details: Get-Service : Cannot find any service with service name 'SRSERVICE'.
+At line:1 char:1
++ Get-Service -Name SRSERVICE | Select-Object -ExpandProperty Status
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (SRSERVICE:String) [Get-Service], ServiceCommandException
+    + FullyQualifiedErrorId : NoServiceFoundForGivenName,Microsoft.PowerShell.Commands.GetServiceCommand
+2025-04-03 07:05:28,865 - ERROR - Error running command: Set-Service -Name SRSERVICE -StartupType Manual; Start-Service -Name SRSERVICE -ErrorAction Silently...
+2025-04-03 07:05:28,865 - ERROR - Error details: Set-Service : Service SRSERVICE was not found on computer '.'.
+At line:1 char:1
++ Set-Service -Name SRSERVICE -StartupType Manual; Start-Service -Name  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (.:String) [Set-Service], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.SetServiceCommand
+2025-04-03 07:05:31,862 - INFO - Successfully ran command: Enable-ComputerRestore -Drive "C:\" -ErrorAction SilentlyContinue
+2025-04-03 07:05:32,865 - INFO - Successfully ran command: Checkpoint-Computer -Description "Gaming Bloatware Remover - 2025-04-03_07-05-26" -RestorePointType ...
+2025-04-03 07:05:32,872 - INFO - System restore point created successfully
+2025-04-03 07:05:32,874 - INFO - Starting reinstallation of selected apps: Microsoft.SkypeApp
+2025-04-03 07:05:32,876 - INFO - Creating system restore point
+2025-04-03 07:05:34,220 - ERROR - Error running command: Get-Service -Name SRSERVICE | Select-Object -ExpandProperty Status
+2025-04-03 07:05:34,220 - ERROR - Error details: Get-Service : Cannot find any service with service name 'SRSERVICE'.
+At line:1 char:1
++ Get-Service -Name SRSERVICE | Select-Object -ExpandProperty Status
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (SRSERVICE:String) [Get-Service], ServiceCommandException
+    + FullyQualifiedErrorId : NoServiceFoundForGivenName,Microsoft.PowerShell.Commands.GetServiceCommand
+2025-04-03 07:05:35,462 - ERROR - Error running command: Set-Service -Name SRSERVICE -StartupType Manual; Start-Service -Name SRSERVICE -ErrorAction Silently...
+2025-04-03 07:05:35,462 - ERROR - Error details: Set-Service : Service SRSERVICE was not found on computer '.'.
+At line:1 char:1
++ Set-Service -Name SRSERVICE -StartupType Manual; Start-Service -Name  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (.:String) [Set-Service], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.SetServiceCommand
+2025-04-03 07:05:38,478 - INFO - Successfully ran command: Enable-ComputerRestore -Drive "C:\" -ErrorAction SilentlyContinue
+2025-04-03 07:05:39,468 - INFO - Successfully ran command: Checkpoint-Computer -Description "Gaming Bloatware Remover - 2025-04-03_07-05-32" -RestorePointType ...
+2025-04-03 07:05:39,485 - INFO - System restore point created successfully
+2025-04-03 07:05:39,487 - INFO - Attempting to reinstall Microsoft.SkypeApp
+2025-04-03 07:05:41,001 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.SkypeApp*
+2025-04-03 07:05:42,763 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.SkypeApp* | ForEach-Object {Add-AppxPackage -DisableDevelopment...
+2025-04-03 07:05:45,404 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.SkypeApp*'} | Fo...
+2025-04-03 07:05:46,705 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.SkypeApp -ErrorAction SilentlyContinue
+2025-04-03 07:05:46,705 - ERROR - Error details: Unknown error (return code 1)
+2025-04-03 07:05:48,260 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.SkypeApp*
+2025-04-03 07:05:48,263 - INFO - Successfully reinstalled Microsoft.SkypeApp
+2025-04-03 07:05:48,266 - INFO - Reinstallation complete. Successfully reinstalled 1 apps.
+2025-04-03 07:05:56,511 - INFO - Successfully ran command: Write-Output 'Microsoft.XboxApp---START---';if (Get-AppxPackage -AllUsers *Microsoft.XboxApp*) { Wri...
+2025-04-05 11:05:37,078 - INFO - Application started
+2025-04-05 11:05:45,250 - INFO - Successfully ran command: Write-Output 'Microsoft.XboxApp---START---';if (Get-AppxPackage -AllUsers *Microsoft.XboxApp*) { Wri...
+2025-04-06 05:57:39,930 - INFO - Application started
+2025-04-06 05:57:45,294 - INFO - Successfully ran command: Write-Output 'Microsoft.XboxApp---START---';if (Get-AppxPackage -AllUsers *Microsoft.XboxApp*) { Wri...
+2025-04-16 07:55:54,283 - INFO - Application started
+2025-04-16 07:56:00,443 - INFO - Successfully ran command: Write-Output 'Microsoft.XboxApp---START---';if (Get-AppxPackage -AllUsers *Microsoft.XboxApp*) { Wri...
+2025-04-16 07:58:43,694 - INFO - Creating system restore point
+2025-04-16 07:58:44,316 - ERROR - Error running command: Get-Service -Name SRSERVICE | Select-Object -ExpandProperty Status
+2025-04-16 07:58:44,316 - ERROR - Error details: Get-Service : Cannot find any service with service name 'SRSERVICE'.
+At line:1 char:1
++ Get-Service -Name SRSERVICE | Select-Object -ExpandProperty Status
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (SRSERVICE:String) [Get-Service], ServiceCommandException
+    + FullyQualifiedErrorId : NoServiceFoundForGivenName,Microsoft.PowerShell.Commands.GetServiceCommand
+2025-04-16 07:58:44,736 - ERROR - Error running command: Set-Service -Name SRSERVICE -StartupType Manual; Start-Service -Name SRSERVICE -ErrorAction Silently...
+2025-04-16 07:58:44,736 - ERROR - Error details: Set-Service : Service SRSERVICE was not found on computer '.'.
+At line:1 char:1
++ Set-Service -Name SRSERVICE -StartupType Manual; Start-Service -Name  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (.:String) [Set-Service], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.SetServiceCommand
+2025-04-16 07:58:47,084 - INFO - Successfully ran command: Enable-ComputerRestore -Drive "C:\" -ErrorAction SilentlyContinue
+2025-04-16 07:58:56,939 - INFO - Successfully ran command: Checkpoint-Computer -Description "Gaming Bloatware Remover - 2025-04-16_07-58-43" -RestorePointType ...
+2025-04-16 07:58:56,954 - INFO - System restore point created successfully
+2025-04-16 07:58:56,964 - INFO - Starting removal of selected apps: Microsoft.SkypeApp
+2025-04-16 07:58:56,965 - INFO - Attempting to remove Microsoft.SkypeApp
+2025-04-16 07:58:58,201 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.SkypeApp* | Remove-AppxPackage
+2025-04-16 07:58:58,202 - INFO - Successfully removed app Microsoft.SkypeApp
+2025-04-16 07:58:58,568 - INFO - Successfully ran command: if (Test-Path 'Registry::HKEY_CLASSES_ROOT\Extensions\ContractId\Windows.Launch\PackageId\Microsoft....
+2025-04-16 07:58:58,861 - INFO - Successfully ran command: if (Test-Path 'Registry::HKEY_CLASSES_ROOT\Extensions\ContractId\Windows.Protocol\PackageId\Microsof...
+2025-04-16 07:58:58,861 - INFO - Successfully removed all registry keys for Microsoft.SkypeApp
+2025-04-16 07:58:58,864 - INFO - Removal complete. Successfully removed 1 apps.
+2025-04-16 08:12:04,196 - INFO - Application started
+2025-04-16 08:12:07,904 - INFO - Successfully ran command: Write-Output 'Microsoft.XboxApp---START---';if (Get-AppxPackage -AllUsers *Microsoft.XboxApp*) { Wri...
+2025-04-16 08:14:09,282 - INFO - Creating system restore point
+2025-04-16 08:14:09,775 - ERROR - Error running command: Get-Service -Name SRSERVICE | Select-Object -ExpandProperty Status
+2025-04-16 08:14:09,775 - ERROR - Error details: Get-Service : Cannot find any service with service name 'SRSERVICE'.
+At line:1 char:1
++ Get-Service -Name SRSERVICE | Select-Object -ExpandProperty Status
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (SRSERVICE:String) [Get-Service], ServiceCommandException
+    + FullyQualifiedErrorId : NoServiceFoundForGivenName,Microsoft.PowerShell.Commands.GetServiceCommand
+2025-04-16 08:14:10,075 - ERROR - Error running command: Set-Service -Name SRSERVICE -StartupType Manual; Start-Service -Name SRSERVICE -ErrorAction Silently...
+2025-04-16 08:14:10,075 - ERROR - Error details: Set-Service : Service SRSERVICE was not found on computer '.'.
+At line:1 char:1
++ Set-Service -Name SRSERVICE -StartupType Manual; Start-Service -Name  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (.:String) [Set-Service], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.SetServiceCommand
+2025-04-16 08:14:12,365 - INFO - Successfully ran command: Enable-ComputerRestore -Drive "C:\" -ErrorAction SilentlyContinue
+2025-04-16 08:14:12,678 - INFO - Successfully ran command: Checkpoint-Computer -Description "Gaming Bloatware Remover - 2025-04-16_08-14-09" -RestorePointType ...
+2025-04-16 08:14:12,682 - INFO - System restore point created successfully
+2025-04-16 08:14:12,684 - INFO - Starting reinstallation of selected apps: Microsoft.SkypeApp
+2025-04-16 08:14:12,686 - INFO - Creating system restore point
+2025-04-16 08:14:12,976 - ERROR - Error running command: Get-Service -Name SRSERVICE | Select-Object -ExpandProperty Status
+2025-04-16 08:14:12,977 - ERROR - Error details: Get-Service : Cannot find any service with service name 'SRSERVICE'.
+At line:1 char:1
++ Get-Service -Name SRSERVICE | Select-Object -ExpandProperty Status
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (SRSERVICE:String) [Get-Service], ServiceCommandException
+    + FullyQualifiedErrorId : NoServiceFoundForGivenName,Microsoft.PowerShell.Commands.GetServiceCommand
+2025-04-16 08:14:13,275 - ERROR - Error running command: Set-Service -Name SRSERVICE -StartupType Manual; Start-Service -Name SRSERVICE -ErrorAction Silently...
+2025-04-16 08:14:13,276 - ERROR - Error details: Set-Service : Service SRSERVICE was not found on computer '.'.
+At line:1 char:1
++ Set-Service -Name SRSERVICE -StartupType Manual; Start-Service -Name  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (.:String) [Set-Service], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.SetServiceCommand
+2025-04-16 08:14:15,506 - INFO - Successfully ran command: Enable-ComputerRestore -Drive "C:\" -ErrorAction SilentlyContinue
+2025-04-16 08:14:15,778 - INFO - Successfully ran command: Checkpoint-Computer -Description "Gaming Bloatware Remover - 2025-04-16_08-14-12" -RestorePointType ...
+2025-04-16 08:14:15,781 - INFO - System restore point created successfully
+2025-04-16 08:14:15,783 - INFO - Attempting to reinstall Microsoft.SkypeApp
+2025-04-16 08:14:16,345 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.SkypeApp*
+2025-04-16 08:14:17,127 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.SkypeApp* | ForEach-Object {Add-AppxPackage -DisableDevelopment...
+2025-04-16 08:14:18,478 - INFO - Successfully ran command: Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like '*Microsoft.SkypeApp*'} | Fo...
+2025-04-16 08:14:18,822 - ERROR - Error running command: Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.SkypeApp -ErrorAction SilentlyContinue
+2025-04-16 08:14:18,822 - ERROR - Error details: Unknown error (return code 1)
+2025-04-16 08:14:19,241 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.SkypeApp*
+2025-04-16 08:14:19,244 - INFO - Successfully reinstalled Microsoft.SkypeApp
+2025-04-16 08:14:19,246 - INFO - Reinstallation complete. Successfully reinstalled 1 apps.
+2025-04-16 08:20:00,817 - INFO - Successfully ran command: Write-Output 'Microsoft.XboxApp---START---';if (Get-AppxPackage -AllUsers *Microsoft.XboxApp*) { Wri...
+2025-04-16 08:20:46,375 - INFO - Creating system restore point
+2025-04-16 08:20:46,672 - ERROR - Error running command: Get-Service -Name SRSERVICE | Select-Object -ExpandProperty Status
+2025-04-16 08:20:46,672 - ERROR - Error details: Get-Service : Cannot find any service with service name 'SRSERVICE'.
+At line:1 char:1
++ Get-Service -Name SRSERVICE | Select-Object -ExpandProperty Status
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (SRSERVICE:String) [Get-Service], ServiceCommandException
+    + FullyQualifiedErrorId : NoServiceFoundForGivenName,Microsoft.PowerShell.Commands.GetServiceCommand
+2025-04-16 08:20:46,937 - ERROR - Error running command: Set-Service -Name SRSERVICE -StartupType Manual; Start-Service -Name SRSERVICE -ErrorAction Silently...
+2025-04-16 08:20:46,937 - ERROR - Error details: Set-Service : Service SRSERVICE was not found on computer '.'.
+At line:1 char:1
++ Set-Service -Name SRSERVICE -StartupType Manual; Start-Service -Name  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (.:String) [Set-Service], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.SetServiceCommand
+2025-04-16 08:20:49,179 - INFO - Successfully ran command: Enable-ComputerRestore -Drive "C:\" -ErrorAction SilentlyContinue
+2025-04-16 08:20:49,413 - INFO - Successfully ran command: Checkpoint-Computer -Description "Gaming Bloatware Remover - 2025-04-16_08-20-46" -RestorePointType ...
+2025-04-16 08:20:49,445 - INFO - System restore point created successfully
+2025-04-16 08:20:49,452 - INFO - Starting removal of selected apps: Microsoft.WindowsAlarms
+2025-04-16 08:20:49,452 - INFO - Attempting to remove Microsoft.WindowsAlarms
+2025-04-16 08:20:50,473 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.WindowsAlarms* | Remove-AppxPackage
+2025-04-16 08:20:50,473 - INFO - Successfully removed app Microsoft.WindowsAlarms
+2025-04-16 08:20:50,476 - INFO - Successfully removed all registry keys for Microsoft.WindowsAlarms
+2025-04-16 08:20:50,478 - INFO - Removal complete. Successfully removed 1 apps.
+2025-04-16 08:23:24,811 - INFO - Successfully ran command: Write-Output 'Microsoft.XboxApp---START---';if (Get-AppxPackage -AllUsers *Microsoft.XboxApp*) { Wri...
+2025-04-16 08:38:33,468 - INFO - Application started
+2025-04-16 08:38:34,125 - INFO - Successfully ran command: Write-Output 'Microsoft.XboxApp---START---';if (Get-AppxPackage -AllUsers *Microsoft.XboxApp*) { Wri...
+2025-04-16 08:39:05,117 - INFO - Requesting admin privileges for operation
+2025-04-16 08:53:55,887 - INFO - Application started
+2025-04-16 08:53:58,448 - INFO - Successfully ran command: Write-Output 'Microsoft.XboxApp---START---';if (Get-AppxPackage -AllUsers *Microsoft.XboxApp*) { Wri...
+2025-04-16 09:00:16,460 - INFO - Creating system restore point
+2025-04-16 09:00:16,823 - ERROR - Error running command: Get-Service -Name SRSERVICE | Select-Object -ExpandProperty Status
+2025-04-16 09:00:16,823 - ERROR - Error details: Get-Service : Cannot find any service with service name 'SRSERVICE'.
+At line:1 char:1
++ Get-Service -Name SRSERVICE | Select-Object -ExpandProperty Status
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (SRSERVICE:String) [Get-Service], ServiceCommandException
+    + FullyQualifiedErrorId : NoServiceFoundForGivenName,Microsoft.PowerShell.Commands.GetServiceCommand
+2025-04-16 09:00:17,147 - ERROR - Error running command: Set-Service -Name SRSERVICE -StartupType Manual; Start-Service -Name SRSERVICE -ErrorAction Silently...
+2025-04-16 09:00:17,147 - ERROR - Error details: Set-Service : Service SRSERVICE was not found on computer '.'.
+At line:1 char:1
++ Set-Service -Name SRSERVICE -StartupType Manual; Start-Service -Name  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (.:String) [Set-Service], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.SetServiceCommand
+2025-04-16 09:00:19,417 - INFO - Successfully ran command: Enable-ComputerRestore -Drive "C:\" -ErrorAction SilentlyContinue
+2025-04-16 09:00:19,808 - INFO - Successfully ran command: Checkpoint-Computer -Description "Gaming Bloatware Remover - 2025-04-16_09-00-16" -RestorePointType ...
+2025-04-16 09:00:19,811 - INFO - System restore point created successfully
+2025-04-16 09:00:19,813 - INFO - Starting removal of selected apps: Microsoft.ZuneVideo
+2025-04-16 09:00:19,813 - INFO - Attempting to remove Microsoft.ZuneVideo
+2025-04-16 09:00:20,398 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.ZuneVideo* | Remove-AppxPackage
+2025-04-16 09:00:20,398 - INFO - Successfully removed app Microsoft.ZuneVideo
+2025-04-16 09:00:20,438 - INFO - Successfully removed all registry keys for Microsoft.ZuneVideo
+2025-04-16 09:00:20,441 - INFO - Removal complete. Successfully removed 1 apps.
+2025-04-16 10:47:07,891 - INFO - Application started
+2025-04-16 10:47:12,105 - INFO - Successfully ran command: Write-Output 'Microsoft.XboxApp---START---';if (Get-AppxPackage -AllUsers *Microsoft.XboxApp*) { Wri...
+2025-04-16 17:32:07,171 - INFO - Application started
+2025-04-16 17:32:11,401 - INFO - Successfully ran command: Write-Output 'Microsoft.XboxApp---START---';if (Get-AppxPackage -AllUsers *Microsoft.XboxApp*) { Wri...
+2025-04-17 05:15:59,041 - INFO - Creating system restore point
+2025-04-17 05:15:59,647 - ERROR - Error running command: Get-Service -Name SRSERVICE | Select-Object -ExpandProperty Status
+2025-04-17 05:15:59,647 - ERROR - Error details: Get-Service : Cannot find any service with service name 'SRSERVICE'.
+At line:1 char:1
++ Get-Service -Name SRSERVICE | Select-Object -ExpandProperty Status
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (SRSERVICE:String) [Get-Service], ServiceCommandException
+    + FullyQualifiedErrorId : NoServiceFoundForGivenName,Microsoft.PowerShell.Commands.GetServiceCommand
+2025-04-17 05:15:59,964 - ERROR - Error running command: Set-Service -Name SRSERVICE -StartupType Manual; Start-Service -Name SRSERVICE -ErrorAction Silently...
+2025-04-17 05:15:59,964 - ERROR - Error details: Set-Service : Service SRSERVICE was not found on computer '.'.
+At line:1 char:1
++ Set-Service -Name SRSERVICE -StartupType Manual; Start-Service -Name  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (.:String) [Set-Service], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.SetServiceCommand
+2025-04-17 05:16:02,247 - INFO - Successfully ran command: Enable-ComputerRestore -Drive "C:\" -ErrorAction SilentlyContinue
+2025-04-17 05:16:02,544 - INFO - Successfully ran command: Checkpoint-Computer -Description "Gaming Bloatware Remover - 2025-04-17_05-15-59" -RestorePointType ...
+2025-04-17 05:16:02,577 - INFO - System restore point created successfully
+2025-04-17 05:16:02,579 - INFO - Starting removal of selected apps: Microsoft.SkypeApp
+2025-04-17 05:16:02,580 - INFO - Attempting to remove Microsoft.SkypeApp
+2025-04-17 05:16:03,771 - INFO - Successfully ran command: Get-AppxPackage -AllUsers *Microsoft.SkypeApp* | Remove-AppxPackage
+2025-04-17 05:16:03,771 - INFO - Successfully removed app Microsoft.SkypeApp
+2025-04-17 05:16:06,002 - INFO - Successfully ran command: if (Test-Path 'Registry::HKEY_CLASSES_ROOT\Extensions\ContractId\Windows.Launch\PackageId\Microsoft....
+2025-04-17 05:16:06,378 - INFO - Successfully ran command: if (Test-Path 'Registry::HKEY_CLASSES_ROOT\Extensions\ContractId\Windows.Protocol\PackageId\Microsof...
+2025-04-17 05:16:06,378 - INFO - Successfully removed all registry keys for Microsoft.SkypeApp
+2025-04-17 05:16:06,381 - INFO - Removal complete. Successfully removed 1 apps.
+2025-04-17 05:52:45,392 - INFO - Application started
+2025-04-17 05:52:47,930 - INFO - Successfully ran command: Write-Output 'Microsoft.XboxApp---START---';if (Get-AppxPackage -AllUsers *Microsoft.XboxApp*) { Wri...
