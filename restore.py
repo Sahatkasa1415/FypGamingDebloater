@@ -76,16 +76,10 @@ def create_restore_point():
         return False
 
 def check_app_installed(app_name):
-    """Check if an app is already installed on the system.
-    
-    Args:
-        app_name (str): The name of the app to check
-        
-    Returns:
-        bool: True if installed, False otherwise
-    """
+    """Check if an app is installed on the system."""
     try:
-        ps_cmd = f"Get-AppxPackage -AllUsers *{app_name}*"
+        # Use a more precise check that ensures we match the exact app name
+        ps_cmd = f"Get-AppxPackage -AllUsers | Where-Object {{$_.Name -eq '{app_name}' -or $_.PackageFullName -eq '{app_name}'}}"
         success, output = run_powershell(ps_cmd)
         
         # If command was successful and returned non-empty output, app exists
@@ -125,14 +119,7 @@ def get_available_apps_for_reinstall():
         return {}
 
 def reinstall_selected_apps(app_list):
-    """Reinstall selected apps.
-    
-    Args:
-        app_list (list): List of app names to reinstall
-        
-    Returns:
-        tuple: (success_count, failed_count)
-    """
+    """Reinstall selected apps."""
     if not app_list:
         print("No apps selected for reinstallation.")
         logging.info("No apps selected for reinstallation")
@@ -173,7 +160,7 @@ def reinstall_selected_apps(app_list):
             ps_cmd3 = f"Add-AppxPackage -RegisterByFamilyName -MainPackage {app_name} -ErrorAction SilentlyContinue"
             success3, _ = run_powershell(ps_cmd3)
             
-            # Check if reinstall was successful
+            # Check if reinstall was successful - use improved check function
             now_installed = check_app_installed(app_name)
             
             if now_installed:
@@ -181,21 +168,20 @@ def reinstall_selected_apps(app_list):
                 logging.info(f"Successfully reinstalled {app_name}")
                 success_count += 1
             else:
+                # Try a more aggressive reinstall attempt
                 print(f"Initial reinstall attempts failed for {app_name}, trying alternative methods...")
                 
-                # Method 4: Try direct reinstall from Microsoft Store (if app wasn't initially installed)
-                if not was_installed:
-                    ps_cmd4 = f"Add-AppxPackage -RegisterByFamilyName -MainPackage {app_name}"
-                    success4, output4 = run_powershell(ps_cmd4)
-                    
-                    if success4 or check_app_installed(app_name):
-                        print(f"Successfully reinstalled {app_name} from store")
-                        logging.info(f"Successfully reinstalled {app_name} from store")
-                        success_count += 1
-                    else:
-                        print(f"Failed to reinstall {app_name}")
-                        logging.warning(f"Failed to reinstall {app_name}")
-                        failed_count += 1
+                # Method 4: Try direct reinstall from Microsoft Store
+                ps_cmd4 = f"Add-AppxPackage -RegisterByFamilyName -MainPackage {app_name}"
+                success4, output4 = run_powershell(ps_cmd4)
+                
+                # Check one more time
+                now_installed = check_app_installed(app_name)
+                
+                if now_installed:
+                    print(f"Successfully reinstalled {app_name} from store")
+                    logging.info(f"Successfully reinstalled {app_name} from store")
+                    success_count += 1
                 else:
                     print(f"Failed to reinstall {app_name}")
                     logging.warning(f"Failed to reinstall {app_name}")

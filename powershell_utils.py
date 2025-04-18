@@ -122,9 +122,11 @@ def run_batch_app_check(app_names, timeout=180):
         
         for app_name in app_names:
             # Format a command that outputs app name and status
+            # Use a more precise check that ensures we match the exact app name
             ps_commands.append(
                 f"Write-Output '{app_name}---START---';"
-                f"if (Get-AppxPackage -AllUsers *{app_name}*) {{ "
+                f"$pkg = Get-AppxPackage -AllUsers | Where-Object {{$_.Name -eq '{app_name}' -or $_.PackageFullName -eq '{app_name}'}};"
+                f"if ($pkg) {{ "
                 f"Write-Output 'INSTALLED' }} else {{ "
                 f"Write-Output 'NOT_INSTALLED' }};"
                 f"Write-Output '---END---';"
@@ -150,6 +152,11 @@ def run_batch_app_check(app_names, timeout=180):
                     results[current_app] = False
                 elif line == '---END---':
                     current_app = None
+                    
+            # Make sure we have a result for each app
+            for app_name in app_names:
+                if app_name not in results:
+                    results[app_name] = False
         
         return results
     except Exception as e:

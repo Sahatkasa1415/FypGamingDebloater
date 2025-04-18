@@ -110,6 +110,9 @@ class GamingDebloaterApp(tk.Tk):
             # Start updating system monitor
             self.update_system_info()
             
+            # Start checking app installation statuses
+            self.check_app_statuses()
+            
             # Log application start
             logging.info("Application started")
         except Exception as e:
@@ -252,6 +255,45 @@ class GamingDebloaterApp(tk.Tk):
             logging.error(f"Error updating system info: {str(e)}")
             # Try again after a delay
             self.after(5000, self.update_system_info)
+    
+    def check_app_statuses(self):
+        """Periodically check app installation statuses"""
+        try:
+            # Only run if reinstall tab has been initialized
+            if hasattr(self, 'app_reinstall'):
+                # Start background thread to check statuses
+                threading.Thread(target=self._check_app_statuses_thread, daemon=True).start()
+            
+            # Schedule next check (every 15 seconds)
+            self.after(15000, self.check_app_statuses)
+        except Exception as e:
+            logging.error(f"Error scheduling status check: {str(e)}")
+            # Try again after a delay
+            self.after(30000, self.check_app_statuses)
+    
+    def _check_app_statuses_thread(self):
+        """Background thread to check app installation statuses"""
+        try:
+            # Only proceed if the reinstall frame exists and is populated
+            if hasattr(self, 'app_reinstall') and hasattr(self.app_reinstall, 'available_apps') and self.app_reinstall.available_apps:
+                # For each app in the reinstall frame
+                for app_name in list(self.app_reinstall.available_apps.keys()):
+                    # Import here to avoid circular imports
+                    from restore import check_app_installed
+                    
+                    # Check current installation status
+                    is_installed = check_app_installed(app_name)
+                    
+                    # Get the current stored status
+                    current_status = self.app_reinstall.available_apps.get(app_name, {}).get("installed", False)
+                    
+                    # Only update if status has changed
+                    if is_installed != current_status:
+                        # Update UI on main thread
+                        self.after(0, lambda app=app_name, status=is_installed: 
+                                  self.app_reinstall.update_app_status(app, status))
+        except Exception as e:
+            logging.error(f"Error checking app statuses: {str(e)}")
 
 def show_error_and_exit(message):
     """Show error message and exit application"""

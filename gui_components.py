@@ -4,7 +4,7 @@ import logging
 import psutil
 import threading
 from app_actions import remove_selected_apps
-from restore import create_restore_point, reinstall_selected_apps, get_available_apps_for_reinstall
+from restore import create_restore_point, reinstall_selected_apps, get_available_apps_for_reinstall, check_app_installed
 from powershell_utils import ensure_admin
 
 class CPURamMonitor(tk.Frame):
@@ -534,6 +534,7 @@ class AppReinstallFrame(tk.Frame):
             # App checkboxes and variables
             self.app_vars = {}
             self.available_apps = {}
+            self.app_frames = {}  # Track app frames for status updates
             
             # Bind canvas resize event
             self.canvas.bind("<Configure>", self.on_canvas_configure)
@@ -594,6 +595,7 @@ class AppReinstallFrame(tk.Frame):
             
             # Re-create all app variables (on the main thread)
             self.app_vars = {}
+            self.app_frames = {}  # Clear the app frames dictionary
             
             # Create checkboxes for all apps
             for app_name, app_info in self.available_apps.items():
@@ -607,6 +609,7 @@ class AppReinstallFrame(tk.Frame):
                 # Create a frame for each app
                 app_frame = tk.Frame(self.checkbox_frame, bg="#d4d4d4", pady=2)
                 app_frame.pack(fill=tk.X, padx=5)
+                self.app_frames[app_name] = app_frame  # Store reference to the frame
                 
                 # Create checkbox
                 checkbox = ttk.Checkbutton(
@@ -629,6 +632,7 @@ class AppReinstallFrame(tk.Frame):
                     fg=status_color
                 )
                 status_label.pack(side=tk.RIGHT, padx=5)
+                app_frame.status_label = status_label  # Store reference to the label
             
             # Update status
             app_count = len(self.available_apps)
@@ -675,10 +679,23 @@ class AppReinstallFrame(tk.Frame):
             self.canvas.config(scrollregion=self.canvas.bbox("all"))
         except Exception as e:
             logging.error(f"Error updating UI with apps: {str(e)}")
-            self.status_label.config(text=f"Error updating apps: {str(e)[:50]}...")
+            self.status_label.config(text=f"Error: {str(e)[:50]}...")
         finally:
             # Re-enable reload button
             self.reload_button.config(state=tk.NORMAL)
+    
+    def update_app_status(self, app_name, is_installed):
+        """Update the status indicator for a specific app"""
+        if app_name in self.app_frames:
+            app_frame = self.app_frames[app_name]
+            if hasattr(app_frame, 'status_label'):
+                status_color = "#008000" if is_installed else "#800000"
+                status_text = "Installed" if is_installed else "Not Installed"
+                app_frame.status_label.config(text=status_text, fg=status_color)
+                
+                # Also update our data
+                if app_name in self.available_apps:
+                    self.available_apps[app_name]["installed"] = is_installed
     
     def select_all_apps(self):
         """Select all apps"""
@@ -752,38 +769,39 @@ class AppReinstallFrame(tk.Frame):
             # Call the reinstall function
             success_count, failed_count = reinstall_selected_apps(selected_apps)
             
-            # Update UI on main thread
-            self.after(0, lambda count1=success_count, count2=failed_count: self._reinstall_complete(count1, count2))
-        except Exception as e:
-            logging.error(f"Error reinstalling apps: {str(e)}")
+            # Check actual installation status for each app
+            for app_name in selected_apps:
+                is_installed = check_app_installed(app_name)
+                # Update in UI thread - need to use lambda with default args to capture current values
+                self.after(0, lambda app=app_name, status=is_installed: 
+                          self.update_app_status(app, status))
             
-            # Show error message on main thread
-            self.after(0, lambda msg=str(e): messagebox.showerror(
-                "Error",
-                f"An error occurred while reinstalling apps:\n{msg}"
-            ))
-            
-            # Re-enable buttons on main thread
-            self.after(0, lambda: self.status_label.config(text="Reinstall failed. Try again."))
-            self.after(0, lambda: self.reinstall_button.config(state=tk.NORMAL))
-            self.after(0, lambda: self.reload_button.config(state=tk.NORMAL))
-    
-    def _reinstall_complete(self, success_count, failed_count):
-        """Handle completion of app reinstallation"""
-        try:
-            # Show success message
-            messagebox.showinfo(
+            # Show success message (needs to be run on the main thread)
+            self.after(0, lambda: messagebox.showinfo(
                 "Reinstall Complete",
                 f"Successfully reinstalled {success_count} app(s).\n"
                 f"Failed to reinstall {failed_count} app(s)."
-            )
+            ))
             
             # Reload app list to show updated status
-            self._start_load_thread()
+            self.after(0, self._start_load_thread)
+                    
         except Exception as e:
-            logging.error(f"Error in _reinstall_complete: {str(e)}")
-            self.status_label.config(text="Error updating status after reinstall")
-        finally:
+            # Log the error
+            logging.error(f"Error reinstalling apps: {str(e)}")
+            
+            # Show error message
+            self.after(0, lambda: messagebox.showerror(
+                "Error",
+                f"An error occurred while reinstalling apps:\n{str(e)}"
+            ))
+            
             # Re-enable buttons
-            self.reinstall_button.config(state=tk.NORMAL)
-            self.reload_button.config(state=tk.NORMAL)
+            self.after(0, lambda: self.status_label.config(text="Reinstall failed. Try again."))
+            self.after(0, lambda: self.reinstall_button.config(state=tk.NORMAL))
+            self.after(0, lambda: self.reload_button.config(state=tk.NORMAL))
+        else:
+            # Re-enable buttons
+            self.after(0, lambda: self.status_label.config(text="Reinstall complete. Refresh list to see updates."))
+            self.after(0, lambda: self.reinstall_button.config(state=tk.NORMAL))
+            self.after(0, lambda: self.reload_button.config(state=tk.NORMAL))
