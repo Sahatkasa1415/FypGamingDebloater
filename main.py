@@ -7,6 +7,7 @@ import sys
 from gui_components import AppSelectionFrame, RestorePointFrame, CPURamMonitor, AppReinstallFrame
 from app_actions import SELECTABLE_APPS, APPS, remove_unneeded_apps
 from restore import create_restore_point
+from unused_apps_frame import UnusedAppsFrame  
 
 # Setup logging
 try:
@@ -95,6 +96,12 @@ class GamingDebloaterApp(tk.Tk):
             self.app_reinstall = AppReinstallFrame(self.reinstall_tab)
             self.app_reinstall.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
             
+            self.unused_tab = tk.Frame(self.notebook, bg="#d4d4d4")
+            self.notebook.add(self.unused_tab, text="Unused Apps")
+
+            # Unused Apps panel
+            self.unused_apps = UnusedAppsFrame(self.unused_tab, days_threshold=90)
+            self.unused_apps.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
             # Add status bar
             self.status_bar = tk.Label(
                 self, 

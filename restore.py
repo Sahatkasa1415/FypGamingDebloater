@@ -79,18 +79,72 @@ def check_app_installed(app_name):
     """Check if an app is installed on the system."""
     try:
         # Use a more precise check that ensures we match the exact app name
-        ps_cmd = f"Get-AppxPackage -AllUsers | Where-Object {{$_.Name -eq '{app_name}' -or $_.PackageFullName -eq '{app_name}'}}"
+        ps_cmd = f"Get-AppxPackage -AllUsers | Where-Object {{$_.Name -eq '{app_name}'}} | Select-Object -ExpandProperty Name"
         success, output = run_powershell(ps_cmd)
         
-        # If command was successful and returned non-empty output, app exists
-        return success and len(output.strip()) > 0
+        # If command was successful and returned non-empty output that exactly matches app name
+        return success and output and output.strip() == app_name
     except Exception as e:
         logging.error(f"Error checking if {app_name} is installed: {str(e)}")
         # Assume not installed on error to be safe
         return False
 
+
+def run_batch_app_check(app_names, timeout=180):
+    """Run a batch check of multiple apps in a single PowerShell process with improved accuracy."""
+    try:
+        # Build PowerShell command to check all apps at once with exact matching
+        ps_commands = []
+        
+        for app_name in app_names:
+            # Use exact name matching to prevent false positives
+            ps_commands.append(
+                f"Write-Output '{app_name}---START---';"
+                f"$pkg = Get-AppxPackage -AllUsers | Where-Object {{$_.Name -eq '{app_name}'}};"
+                f"if ($pkg) {{ "
+                f"Write-Output 'INSTALLED' }} else {{ "
+                f"Write-Output 'NOT_INSTALLED' }};"
+                f"Write-Output '---END---';"
+            )
+        
+        # Join all commands and run as a single PowerShell process
+        full_command = " ".join(ps_commands)
+        success, output = run_powershell(full_command, timeout=timeout)
+        
+        # Parse the results
+        results = {}
+        if success:
+            lines = output.strip().split('\n')
+            current_app = None
+            
+            for line in lines:
+                line = line.strip()
+                if '---START---' in line:
+                    current_app = line.split('---START---')[0]
+                elif line == 'INSTALLED' and current_app:
+                    results[current_app] = True
+                    logging.debug(f"App {current_app} is detected as INSTALLED")
+                elif line == 'NOT_INSTALLED' and current_app:
+                    results[current_app] = False
+                    logging.debug(f"App {current_app} is detected as NOT_INSTALLED")
+                elif line == '---END---':
+                    current_app = None
+            
+            # Make sure we have a result for each app
+            for app_name in app_names:
+                if app_name not in results:
+                    results[app_name] = False
+                    logging.debug(f"App {app_name} defaulted to NOT_INSTALLED (no result)")
+        
+        return results
+    except Exception as e:
+        logging.error(f"Error in batch app check: {str(e)}")
+        # Default everything to not installed to avoid false positives
+        return {app_name: False for app_name in app_names}
+
+# Around line 87-110 in restore.py
 def get_available_apps_for_reinstall():
-    """Get a list of apps that can be reinstalled.
+    """Get a list of apps that can be reinstalled with accurate installation status.
     
     Returns:
         dict: Dictionary with app_name as key and installed status as value
@@ -98,26 +152,38 @@ def get_available_apps_for_reinstall():
     try:
         # Get app list from app_actions.py
         from app_actions import APPS
-        from powershell_utils import run_batch_app_check
         
-        # Run batch check for all apps at once
-        app_names = list(APPS.keys())
-        installed_status = run_batch_app_check(app_names)
-        
-        # Format the results
+        # First verify each app individually with direct PowerShell checking
         available_apps = {}
-        for app_name in app_names:
-            is_installed = installed_status.get(app_name, False)
-            available_apps[app_name] = {
-                "description": APPS[app_name]["description"] if "description" in APPS[app_name] else app_name,
-                "installed": is_installed
-            }
+        for app_name in APPS.keys():
+            try:
+                # Use a more precise checking mechanism
+                ps_cmd = f"Get-AppxPackage -AllUsers | Where-Object {{$_.Name -eq '{app_name}'}} | Select-Object -ExpandProperty Name"
+                success, output = run_powershell(ps_cmd)
+                
+                # Consider installed only if output exactly matches app name
+                is_installed = success and output and output.strip() == app_name
+                
+                available_apps[app_name] = {
+                    "description": APPS[app_name]["description"] if "description" in APPS[app_name] else app_name,
+                    "installed": is_installed
+                }
+                
+                # Log the status
+                logging.info(f"App {app_name} detected as {'installed' if is_installed else 'not installed'}")
+                
+            except Exception as app_error:
+                logging.error(f"Error checking app {app_name}: {str(app_error)}")
+                # Default to not installed in case of errors to avoid false positives
+                available_apps[app_name] = {
+                    "description": APPS[app_name]["description"] if "description" in APPS[app_name] else app_name,
+                    "installed": False
+                }
         
         return available_apps
     except Exception as e:
         logging.error(f"Error in get_available_apps_for_reinstall: {str(e)}")
         return {}
-
 def reinstall_selected_apps(app_list):
     """Reinstall selected apps."""
     if not app_list:

@@ -119,6 +119,179 @@ class CPURamMonitor(tk.Frame):
             # Log but don't crash on update errors
             logging.error(f"Error updating system monitor: {str(e)}")
 
+class StorageBar(tk.Frame):
+    """Widget to display storage usage with a horizontal progress bar - redesigned for minimal look"""
+    def __init__(self, parent):
+        try:
+            super().__init__(parent, bg="#e0e0e0")
+            
+            # Main container with fixed width for more minimal appearance
+            self.container = tk.Frame(self, bg="#e0e0e0", padx=10, pady=5, width=300)
+            self.container.pack(fill=tk.X, expand=False)
+            self.container.pack_propagate(False)  # Prevent container from resizing to children
+            
+            # Left side - Better looking storage icon
+            self.icon_frame = tk.Frame(self.container, bg="#e0e0e0", width=24, height=24)
+            self.icon_frame.pack(side=tk.LEFT, padx=(0, 10))
+            self.icon_frame.pack_propagate(False)
+            
+            self.icon_canvas = tk.Canvas(
+                self.icon_frame, 
+                width=24, 
+                height=24, 
+                bg="#e0e0e0",
+                highlightthickness=0
+            )
+            self.icon_canvas.pack(fill=tk.BOTH, expand=True)
+            
+            # Draw improved drive icon (rounded corners, matching colors with CPU/RAM)
+            # Base of the drive
+            self.icon_canvas.create_rectangle(
+                4, 10, 20, 20, 
+                fill="#9e4e6a", 
+                outline="",
+                width=0,
+                tags=("storage_icon",)
+            )
+            # Top of the drive with rounded corners
+            self.icon_canvas.create_oval(
+                2, 5, 10, 13,
+                fill="#9e4e6a",
+                outline="",
+                tags=("storage_icon",)
+            )
+            self.icon_canvas.create_oval(
+                14, 5, 22, 13,
+                fill="#9e4e6a",
+                outline="",
+                tags=("storage_icon",)
+            )
+            self.icon_canvas.create_rectangle(
+                6, 5, 18, 13,
+                fill="#9e4e6a",
+                outline="",
+                tags=("storage_icon",)
+            )
+            # Small LED indicator
+            self.icon_canvas.create_oval(
+                17, 14, 19, 16, 
+                fill="#d0f0d0", 
+                outline="",
+                tags=("storage_icon",)
+            )
+            
+            # Right side container for text and progress bar
+            self.info_container = tk.Frame(self.container, bg="#e0e0e0")
+            self.info_container.pack(side=tk.LEFT, fill=tk.X, expand=True)
+            
+            # Drive info container (for drive name and storage info side by side)
+            self.drive_info_container = tk.Frame(self.info_container, bg="#e0e0e0")
+            self.drive_info_container.pack(fill=tk.X, expand=True)
+            
+            # Drive name
+            self.drive_label = tk.Label(
+                self.drive_info_container,
+                text="System Drive (C:)",
+                font=("Arial", 9, "bold"),
+                bg="#e0e0e0",
+                fg="#555555",
+                anchor=tk.W
+            )
+            self.drive_label.pack(side=tk.LEFT)
+            
+            # Storage info label
+            self.storage_info = tk.Label(
+                self.drive_info_container,
+                text="0 GB free of 0 GB",
+                font=("Arial", 8),
+                bg="#e0e0e0",
+                fg="#555555",
+                anchor=tk.E
+            )
+            self.storage_info.pack(side=tk.RIGHT)
+            
+            # Progress bar container
+            self.bar_container = tk.Frame(self.info_container, bg="#e0e0e0")
+            self.bar_container.pack(fill=tk.X, pady=2)
+            
+            # Custom progress bar with rounded corners
+            self.bar_canvas = tk.Canvas(
+                self.bar_container,
+                height=8,  # Reduced height for more minimal look
+                bg="#e0e0e0",
+                highlightthickness=0
+            )
+            self.bar_canvas.pack(fill=tk.X)
+            
+            # Background of the bar
+            self.bar_bg = self.bar_canvas.create_rectangle(
+                0, 0, 1, 8,
+                fill="#d7c0c7",  # Matching the circle backgrounds of CPU/RAM
+                outline="",
+                width=0,
+                tags=("bar_bg",)
+            )
+            
+            # Filled portion of the bar
+            self.bar_fill = self.bar_canvas.create_rectangle(
+                0, 0, 0, 8,
+                fill="#9e4e6a",  # Matching the circle fill of CPU/RAM
+                outline="",
+                width=0,
+                tags=("bar_fill",)
+            )
+            
+            # Get initial size of canvas
+            self.bar_canvas.update()
+            self.canvas_width = self.bar_canvas.winfo_width()
+            
+            # Bind resize event
+            self.bar_canvas.bind("<Configure>", self._on_resize)
+            
+        except Exception as e:
+            logging.error(f"Error initializing StorageBar: {str(e)}")
+            label = tk.Label(self, text="Storage Monitor Unavailable", bg="#e0e0e0", fg="red")
+            label.pack(pady=5)
+    
+    def _on_resize(self, event):
+        """Handle resize of the canvas"""
+        self.canvas_width = event.width
+        self.bar_canvas.coords(self.bar_bg, 0, 0, self.canvas_width, 8)
+        self.update_storage_info()  # Refresh to ensure the bar fills correctly
+    
+    def update_storage_info(self):
+        """Update storage information display"""
+        try:
+            # Get storage info for C: drive or system drive
+            try:
+                drive_path = 'C:\\'
+                storage_info = psutil.disk_usage(drive_path)
+                drive_name = "System Drive (C:)"
+            except:
+                # Fallback to root path
+                drive_path = '/'
+                storage_info = psutil.disk_usage(drive_path)
+                drive_name = "System Drive"
+            
+            # Calculate values
+            percent = storage_info.percent
+            total_gb = storage_info.total / (1024**3)  # Convert to GB
+            free_gb = storage_info.free / (1024**3)    # Convert to GB
+            used_gb = storage_info.used / (1024**3)    # Convert to GB
+            
+            # Update drive name
+            self.drive_label.config(text=drive_name)
+            
+            # Update progress bar (fill)
+            fill_width = int((percent / 100) * self.canvas_width)
+            self.bar_canvas.coords(self.bar_fill, 0, 0, fill_width, 8)
+            
+            # Update storage info text
+            self.storage_info.config(text=f"{free_gb:.1f} GB free of {total_gb:.1f} GB")
+            
+        except Exception as e:
+            logging.error(f"Error updating storage info: {str(e)}")
+            self.storage_info.config(text="Storage info unavailable")
 
 class AppSelectionFrame(tk.Frame):
     """Frame for selecting apps to remove"""
